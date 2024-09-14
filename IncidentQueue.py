@@ -36,7 +36,7 @@ class IncidentQueue:
     def get_queue_size(self):
         return len(self.priority_queue)
 
-    def get_incidents_at_location(self, location: str)->[]:
+    def get_incidents_at_location(self, location: str)->list:
         if location not in self.location_frequency_counter:
             return None
         
