@@ -1,11 +1,3 @@
-# DispatchIQ
-## VTHax 2024
-### Team:
-- Daniel Hollberg
-- Alex Urbina
-- Aidan Walters 
-- Aneesh Tummeti
-
 ## Inspiration
 
 In emergency situations, dispatchers are often inundated with a high volume of calls, many of which are waiting in a FIFO (First-In, First-Out) queue to connect with a dispatcher. Compounding this challenge is the fact that approximately 20% of the U.S. population speaks a language other than English as their first language, which can further complicate communication and delay response times. DispatchIQ is designed to assist dispatchers by automating the triage process for these queued calls. 
@@ -19,14 +11,15 @@ DispatchIQ ensures a seamless and effective solution for managing emergency call
 - Flask and React for front-end
 - Python for back-end support
 
+*Our "severity score" was inspired by Common Vulnerabilities and Exposures (CVE) ratings.*
+
 ## What it Does
 
 DispatchIQ is an AI-powered call triage and prioritization system designed to assist 911 dispatchers by:
-- Automatically transcribing calls in real-time.
+- Automatically transcribing calls in real-time using generative AI.
 - Supporting multiple languages with automatic language translation.
-- Assigning a severity score to each case.
+- Using machine learning to predict a severity score to each case based on trained data.
 - Ranking emergencies based on urgency to optimize resource allocation.
-- Prompting dispatchers with follow-up questions to gather missing information.
 
 ## How We Built It
 
@@ -38,9 +31,9 @@ DispatchIQ is an AI-powered call triage and prioritization system designed to as
 
 ## Challenges We Ran Into
 
-- **Accuracy of Transcriptions**: Ensuring high accuracy of speech-to-text conversion in noisy environments and with non-native English speakers.
+- **Accuracy of Transcriptions**: Ensuring high accuracy of speech-to-text conversion in noisy environments.
 - **Severity Scoring**: Developing an algorithm that can reliably assess the severity of a situation from sometimes ambiguous or incomplete information.
-- **Real-Time Processing**: Handling the high volume of incoming calls and processing data quickly enough to be actionable in urgent situations.
+- **Front-end Development**: Handling the high volume of incoming calls and processing data quickly enough to be actionable in urgent situations.
 
 ## Accomplishments That We're Proud Of
 
@@ -48,15 +41,14 @@ DispatchIQ is an AI-powered call triage and prioritization system designed to as
 - **Real-Time Updates**: Enabled dynamic updates to severity scores, ensuring that dispatchers have the most current information.
 - **Improved Dispatcher Focus**: Helped dispatchers focus on critical cases by providing an AI-generated priority list and reducing manual effort.
 
-## What We Learned [TODO]
+## What We Learned
 
-- **Importance of Accuracy**: High accuracy in speech-to-text conversion is crucial for effective triage and prioritization.
-- **Need for Dynamic Systems**: Real-time updates and dynamic severity scoring are essential for handling evolving emergency situations.
-- **Human-AI Collaboration**: AI can significantly enhance human decision-making but should work in tandem with human judgment rather than replace it.
+- **Dynamic Systems are Crucial**: Real-time updates and dynamic severity scoring are essential for handling evolving emergency situations.
+- **Human-AI Collaboration**: AI can significantly enhance human decision-making but should work with a human for judgement rather than replace one.
 
 ## What's Next for DispatchIQ
 
 - **Integration with Additional Services**: Explore opportunities to integrate DispatchIQ with other public health and emergency response services to broaden its impact.
-- **Continual Improvement**: Enhance the AI's ability to handle diverse languages and accents, and refine severity scoring algorithms based on real-world feedback.
+- **Continual Improvement**: Refine severity scoring algorithms based on real-world data.
 - **Expansion of Features**: Develop new features such as automated follow-ups for ambiguous cases and more advanced analytics for emergency response optimization.
-- **AI Prompts**: Integrate AI-driven prompts to gather additional information from distressed callers and fill in gaps that might be missed during high call volumes.
+- **AI Prompts**: Prompting dispatchers with follow-up questions to gather missing information.
