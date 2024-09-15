@@ -74,33 +74,35 @@ class DatabaseManager:
         self.collection.delete_many({})
         # print(f"Deleted {result.deleted_count} documents from the collection.")
     
-    def get_ordered_by_severity(self)->list:
+    def get_ordered_by_severity(self) -> list:
         incidents = self.collection.find()
-
+        
+        # Define severity order and scores
+        severity_info = {
+            'critical': {'order': 0, 'score': 100, 'highlight': True},
+            'high': {'order': 1, 'score': 75, 'highlight': True},
+            'medium': {'order': 2, 'score': 50, 'highlight': False},
+            'low': {'order': 3, 'score': 25, 'highlight': False}
+        }
+        
         incident_list = []
-
         for incident in incidents:
-            # new_incident = Incident(
-            # incident_id = incident.get("_id"),
-            # user_name= incident['name'],
-            # incident_info = incident['emergency_details'],
-            # severity_score=incident['severity'],
-            # location = incident['location'],
-            # timestamp = incident['timestamp'],
-            # transcribed_call = incident['transcript']
-            # )
-
             new_incident = self.serialize(incident)
-
-            severity: float = incident['severity']
-            dt: datetime = incident['timestamp']
-
-            incident_list.append((severity, dt, new_incident))
-
-        incident_list.sort()
-
-        result = [incident for _,_, incident in incident_list]
-
+            severity = incident['severity'].lower()
+            info = severity_info.get(severity, {'order': 4, 'score': 0, 'highlight': False})
+            
+            # Add score and highlight information to the incident
+            new_incident['severity_score'] = info['score']
+            new_incident['highlight'] = info['highlight']
+            
+            incident_list.append((info['order'], new_incident))
+        
+        # Sort by severity order (ascending) and then by timestamp (descending) if severities are equal
+        incident_list.sort(key=lambda x: (x[0], -x[1]['timestamp'].timestamp()))
+        
+        # Extract just the incident data, discarding the order value used for sorting
+        result = [incident for _, incident in incident_list]
+        
         return result
     
     def is_empty(self) -> bool:
