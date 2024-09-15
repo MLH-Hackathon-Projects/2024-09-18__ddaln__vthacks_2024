@@ -29,7 +29,7 @@ class DatabaseManager:
             user_name= incident_data['name'],
             incident_title=incident_data['emergency_details'],
             severity_score= -1,
-            location= incident_data['l ocation'],
+            location= incident_data['location'],
             timestamp = incident_data['timestamp'],
             transcribed_call= incident_data['transcript']
         )

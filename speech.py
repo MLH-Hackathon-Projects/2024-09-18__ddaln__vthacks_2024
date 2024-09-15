@@ -48,7 +48,7 @@ def analyze_emergency_call(transcription):
 
 def recognize_from_microphone():
     speech_config = speechsdk.SpeechConfig(subscription=SPEECH_KEY, region=SPEECH_REGION)
-    speech_config.speech_recognition_language="es-ES"
+    speech_config.speech_recognition_language="es-US"
 
     audio_config = speechsdk.audio.AudioConfig(use_default_microphone=True)
     speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)
