@@ -40,10 +40,19 @@ def get_flagged_incidents():
 @app.route('/incidents/resolved', methods=['GET'])
 def get_resolved_incidents():
     try:
-        resolved_incidents = db_manager.get_incidents_by_feature("resolved")
+        resolved_incidents = db_manager.get_incidents_by_feature("flagged")
         return jsonify(resolved_incidents)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+@app.route('/resolve/<string:incident_id>', methods=['POST'])
+def resolve_incident(incident_id):
+    try:
+        db_manager.resolve_incident(incident_id)
+        return '', 204  # Return no content with a 204 status code on success
+    except Exception as e:
+        app.logger.error(f"Error resolving incident: {str(e)}")
+        return '', 500  # Return no content with a 500 status code on error
 
 if __name__ == '__main__':
     app.run(debug=True)
