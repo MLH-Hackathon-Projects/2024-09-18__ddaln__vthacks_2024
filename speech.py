@@ -1,3 +1,4 @@
+from datetime import datetime
 import azure.cognitiveservices.speech as speechsdk
 from config import SPEECH_KEY, SPEECH_REGION, GEMINI_API
 import google.generativeai as genai
@@ -16,8 +17,8 @@ def analyze_emergency_call(transcription):
         {{
         'location': '',
         'name': '',
-        'age': None,
-        'emergency_details': '',
+        'age': 0,
+        'emergency_details': "",
         'num_people': 0,
         'mentioned_medical': 0,
         'mentioned_violence': 0,
@@ -48,6 +49,8 @@ def convert_response_to_dict(transcription):
     analysis = analysis.strip().strip('python')
     
     dictionary = ast.literal_eval(analysis)
+    dictionary["timestamp"] = datetime.now()
+    dictionary["transcript"] =  transcription
     print(dictionary)
     return dictionary
 

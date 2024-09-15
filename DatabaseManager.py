@@ -2,7 +2,7 @@ import os
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 from dotenv import load_dotenv, dotenv_values 
-from datetime import datetime
+# from datetime import datetime
 from Incident import Incident
 from bson.objectid import ObjectId
 
@@ -20,15 +20,15 @@ class DatabaseManager:
         self.collection = self.db['IncidentReports']
 
     def insert_incident(self,incident_data: dict)->Incident:
-        result = self.collection.insert(incident_data)
+        result = self.collection.insert_one(incident_data)
 
         incident_id = result.inserted_id
 
         new_incident = Incident(
             incident_id = incident_id,
             user_name= incident_data['name'],
-            incident_title=incident_data['emergency_details'],
-            severity_score= -1,
+            incident_info=incident_data['emergency_details'],
+            severity_score = incident_data["severity"],
             location= incident_data['location'],
             timestamp = incident_data['timestamp'],
             transcribed_call= incident_data['transcript']
@@ -63,7 +63,7 @@ class DatabaseManager:
             new_incident = Incident(
             incident_id = incident.get("_id"),
             user_name= incident['name'],
-            incident_title = incident['emergency_details'],
+            incident_info = incident['emergency_details'],
             severity_score=incident['severity'],
             location = incident['location'],
             timestamp = incident['timestamp'],
