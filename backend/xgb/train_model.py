@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 MODEL = 'xgboost_model'
 
 # Load dataset
-df = pd.read_csv('incident_features.csv')
+df = pd.read_csv('backend/incident_features.csv')
 df_numeric = df.apply(pd.to_numeric, errors='coerce')
 df_filled = df_numeric.fillna(0)
 df_cleaned = df_filled.drop(columns=['severity'])
@@ -27,5 +27,5 @@ xg_reg = xgb.XGBRegressor(objective='reg:squarederror', colsample_bytree=0.5, le
 xg_reg.fit(X_train, y_train)
 
 # Save the model
-xg_reg.save_model(f'xgb/xgb_models/{MODEL}.json')
-print(f"Model saved to xgb/xgb_models/{MODEL}.json")
+xg_reg.save_model(f'backend/xgb/xgb_models/{MODEL}.json')
+print(f"Model saved to backend/xgb/xgb_models/{MODEL}.json")
