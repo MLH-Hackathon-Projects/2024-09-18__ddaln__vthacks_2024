@@ -4,9 +4,7 @@ from config import SPEECH_KEY, SPEECH_REGION, GEMINI_API
 import google.generativeai as genai
 import ast
 
-
 genai.configure(api_key=GEMINI_API)
-
 
 def analyze_emergency_call(transcription):
     prompt = f"""
@@ -42,10 +40,19 @@ def analyze_emergency_call(transcription):
     except Exception as e:
         print(f"Error during call: {e}")
         return "Error occurred with the call."
+
+def convert_response_to_dict(transcription):
+    analysis = analyze_emergency_call(transcription)
+    print(analysis)
     
-
-
-
+    analysis = analysis.strip().strip('`')
+    analysis = analysis.strip().strip('python')
+    
+    dictionary = ast.literal_eval(analysis)
+    dictionary["timestamp"] = datetime.now()
+    dictionary["transcript"] =  transcription
+    print(dictionary)
+    return dictionary
 
 def recognize_from_microphone():
     speech_config = speechsdk.SpeechConfig(subscription=SPEECH_KEY, region=SPEECH_REGION)
@@ -62,23 +69,15 @@ def recognize_from_microphone():
         print("Transcription: ", transcription)
         
         print("\nAnalyzing call...")
-        analysis = analyze_emergency_call(transcription)
-        print(analysis)
-        
-        analysis = analysis.strip().strip('`')
-        analysis = analysis.strip().strip('python')
-        
-        dictionary = ast.literal_eval(analysis)
-        dictionary["timestamp"] = datetime.now()
-        dictionary["transcript"] =  transcription
-        print(dictionary)
+        dictionary = convert_response_to_dict(transcription)
         return dictionary
     
     else:
         print(f"Speech recognition failed: {speech_recognition_result.reason}")
         return None
 
-    
-
 if __name__ == "__main__":
-    recognize_from_microphone()
+    stuff = 'I am John, help. My car exploded and is on fire!'
+    #recognize_from_microphone()
+    abc = convert_response_to_dict(stuff)
+    print(abc)

@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from datetime import datetime
 from Incident import Incident
 from bson.objectid import ObjectId
+from datetime import datetime
 
 class DatabaseManager:
     def __init__(self):
@@ -18,6 +19,26 @@ class DatabaseManager:
         self.client = MongoClient(self.uri, server_api=ServerApi('1'))
         self.db = self.client['Incidents']
         self.collection = self.db['IncidentReports']
+
+    def serialize(self, data):
+        # Convert ObjectId and datetime to JSON-compatible formats
+        if isinstance(data, dict):
+            for key, value in data.items():
+                if isinstance(value, ObjectId):
+                    data[key] = str(value)
+                elif isinstance(value, datetime):
+                    data[key] = value.isoformat()
+        return data
+
+    def fetch_random_user(self):
+        try:
+            # Fetch a single random document from the collection
+            user = self.collection.find_one({"name": "bob"})
+            if user:
+                return self.serialize(user)
+            return None
+        except Exception as e:
+            raise Exception(f"Error fetching random user: {e}")
 
     def insert_incident(self,incident_data: dict)->Incident:
         result = self.collection.insert_one(incident_data)

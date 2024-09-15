@@ -1,4 +1,4 @@
-from Incident import Incident
+from vthacks_2024.backend.Incident import Incident
 from collections import defaultdict
 import heapq
 
