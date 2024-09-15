@@ -3,9 +3,7 @@ from config import SPEECH_KEY, SPEECH_REGION, GEMINI_API
 import google.generativeai as genai
 import ast
 
-
 genai.configure(api_key=GEMINI_API)
-
 
 def analyze_emergency_call(transcription):
     prompt = f"""
@@ -76,4 +74,7 @@ def recognize_from_microphone():
         return None
 
 if __name__ == "__main__":
-    recognize_from_microphone()
+    stuff = 'I am John, help. My car exploded and is on fire!'
+    #recognize_from_microphone()
+    abc = convert_response_to_dict(stuff)
+    print(abc)
