@@ -106,6 +106,17 @@ class DatabaseManager:
         
         return result
     
+    def resolve_incident(self, incident_id: str):
+        self.collection.update_one(
+            {"_id": ObjectId(incident_id)},
+            {
+                "$set": {
+                    "flagged": 1,
+                    "needs_review": 0
+                }
+            }
+        )
+
     def is_empty(self) -> bool:
         return self.collection.count_documents({}) == 0    
 

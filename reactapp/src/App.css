@@ -65,7 +65,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
-  color: #1a237e; /* Changed to the blue theme color */
+  color: #1a237e;
 }
 
 .tab:hover {
@@ -75,7 +75,7 @@ body {
 .tab.active {
   background-color: white;
   border-bottom: 3px solid #1a237e;
-  color: #1a237e; /* Ensuring active tab text is also blue */
+  color: #1a237e;
 }
 
 .case-list {
@@ -187,6 +187,54 @@ button {
 
 button:hover {
   background-color: #45a049;
+}
+
+/* New styles for expand/collapse functionality */
+.expand-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  color: #1a237e;
+}
+
+.expand-icon {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.expand-icon.expanded {
+  transform: rotate(180deg);
+}
+
+.incident-details-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.incident-details-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.incident-details-card p {
+  margin: 5px 0;
+}
+
+.transcript {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.transcript p {
+  white-space: pre-wrap;
 }
 
 /* Responsive design */

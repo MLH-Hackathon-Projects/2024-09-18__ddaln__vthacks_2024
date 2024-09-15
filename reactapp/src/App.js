@@ -8,19 +8,11 @@ const getSeverityColor = (severity) => {
   return '#2ECC40'; // low
 };
 
-const getSeverityText = (color) => {
-  switch (color) {
-    case '#FF4136':
-      return 'Critical';
-    case '#FF851B':
-      return 'High';
-    case '#FFDC00':
-      return 'Medium';
-    case '#2ECC40':
-      return 'Low';
-    default:
-      return 'Unknown';
-  }
+const getSeverityText = (severity) => {
+  if (severity >= 8) return 'Critical';
+  if (severity >= 6) return 'High';
+  if (severity >= 5) return 'Medium';
+  return 'Low';
 };
 
 function App() {
@@ -31,15 +23,11 @@ function App() {
   const [resolvedCases, setResolvedCases] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [expandedIncident, setExpandedIncident] = useState(null);
 
   useEffect(() => {
-    // Initial fetch
     fetchAllData();
-
-    // Set up interval for fetching data every 5 seconds
     const intervalId = setInterval(fetchAllData, 5000);
-
-    // Clean up interval on component unmount
     return () => clearInterval(intervalId);
   }, [sortType]);
 
@@ -54,15 +42,11 @@ function App() {
 
   const fetchIncidents = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/incidents?sort=${sortType}`);
+      const response = await fetch(`http://localhost:5000/incidents?sort=${sortType}&flagged=0`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       let data = await response.json();
-      // // Only reverse the data for severity sorting
-      // if (sortType === 'severity') {
-      //   data = data.reverse();
-      // }
       setIncidents(data);
     } catch (error) {
       console.error('Error fetching incidents:', error);
@@ -107,6 +91,31 @@ function App() {
     setActiveTab(tab);
   };
 
+  const toggleIncidentDetails = (incidentId) => {
+    setExpandedIncident(expandedIncident === incidentId ? null : incidentId);
+  };
+
+  const resolveIncident = async (incidentId) => {
+    try {
+      const response = await fetch(`http://localhost:5000/resolve/${incidentId}`, {
+        method: 'POST',
+      });
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || `HTTP error! status: ${response.status}`);
+      }
+      // Remove the resolved incident from the incidents state
+      setIncidents(incidents.filter(incident => incident._id !== incidentId));
+      // Add the resolved incident to the resolvedCases state
+      const resolvedIncident = incidents.find(incident => incident._id === incidentId);
+      setResolvedCases([...resolvedCases, resolvedIncident]);
+      setError(null); // Clear any previous errors
+    } catch (error) {
+      console.error('Error resolving incident:', error);
+      setError(`Failed to resolve incident: ${error.message}`);
+    }
+  };
+
   const casesToShow = activeTab === 'flagged' ? flaggedCases : resolvedCases;
 
   return (
@@ -115,7 +124,6 @@ function App() {
         <h1>DispatchIQ</h1>
       </header>
 
-      {isLoading && <div className="loading-indicator">Updating data...</div>}
       {error && <div className="error-message">{error}</div>}
 
       <div className="content">
@@ -169,13 +177,56 @@ function App() {
             </thead>
             <tbody>
               {incidents.map((incident) => (
-                <tr key={incident._id} style={{ backgroundColor: `${getSeverityColor(Number(incident.severity))}22` }}>
-                  <td style={{ fontWeight: 'bold', color: getSeverityColor(Number(incident.severity)) }}>{getSeverityText(getSeverityColor(incident.severity))}</td>
-                  <td>{incident.name}</td>
-                  <td>{incident.emergency_details}</td>
-                  <td>{new Date(incident.timestamp).toLocaleTimeString()}</td>
-                  <td><button className="resolve-button">Resolve</button></td>
-                </tr>
+                <React.Fragment key={incident._id}>
+                  <tr 
+                    onClick={() => toggleIncidentDetails(incident._id)}
+                    style={{ 
+                      backgroundColor: getSeverityColor(Number(incident.severity)) + '20',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    <td style={{ fontWeight: 'bold', color: getSeverityColor(Number(incident.severity)) }}>
+                      {getSeverityText(Number(incident.severity))}
+                    </td>
+                    <td>{incident.name}</td>
+                    <td>{incident.emergency_details}</td>
+                    <td>{new Date(incident.timestamp).toLocaleString()}</td>
+                    <td>
+                      {!incident.resolved && (
+                        <button 
+                          className="resolve-button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            resolveIncident(incident._id);
+                          }}
+                        >
+                          Resolve
+                        </button>
+                      )}
+                      {incident.resolved && (
+                        <span className="resolved-text">Resolved</span>
+                      )}
+                    </td>
+                  </tr>
+                  {expandedIncident === incident._id && (
+                    <tr>
+                      <td colSpan="5">
+                        <div className="incident-details-card">
+                          <h3>Incident Details</h3>
+                          <p><strong>Severity:</strong> {incident.severity}</p>
+                          <p><strong>Name:</strong> {incident.name}</p>
+                          <p><strong>Age:</strong> {incident.age || 'N/A'}</p>
+                          <p><strong>Location:</strong> {incident.location || 'N/A'}</p>
+                          <p><strong>Emergency Details:</strong> {incident.emergency_details}</p>
+                          <div className="transcript">
+                            <strong>Transcript:</strong>
+                            <p>{incident.transcript || 'No transcript available'}</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                </React.Fragment>
               ))}
             </tbody>
           </table>
