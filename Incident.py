@@ -51,3 +51,8 @@ class Incident:
 
         return self.timestamp < other.timestamp
     
+    # def compare_by_time_then_severity(self, other):
+    #     if self.timestamp != other.timestamp:
+    #         return self.timestamp < other.timestamp
+    #     return self.severity_score > other.severity_score
+    

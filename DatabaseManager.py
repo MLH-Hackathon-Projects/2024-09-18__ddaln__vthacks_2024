@@ -1,8 +1,8 @@
 import os
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-from dotenv import load_dotenv, dotenv_values 
-# from datetime import datetime
+from dotenv import load_dotenv 
+from datetime import datetime
 from Incident import Incident
 from bson.objectid import ObjectId
 
@@ -75,6 +75,62 @@ class DatabaseManager:
             
         return incident_list
     
+    def clear_database(self):
+        result = self.collection.delete_many({})
+        # print(f"Deleted {result.deleted_count} documents from the collection.")
+    
+    def get_ordered_by_severity(self):
+        incidents = self.collection.find()
+
+        incident_list = []
+
+        for incident in incidents:
+            new_incident = Incident(
+            incident_id = incident.get("_id"),
+            user_name= incident['name'],
+            incident_info = incident['emergency_details'],
+            severity_score=incident['severity'],
+            location = incident['location'],
+            timestamp = incident['timestamp'],
+            transcribed_call = incident['transcript']
+            )
+
+            incident_list.append((incident['severity'], new_incident))
+
+        incident_list.sort()
+
+        result = [incident for _, incident in incident_list]
+
+        return result
+    
+    def is_empty(self) -> bool:
+        return self.collection.count_documents({}) == 0    
+
+    def get_ordered_by_time(self):
+        incidents = self.collection.find()
+
+        incident_list = []
+
+        for incident in incidents:
+            new_incident = Incident(
+            incident_id = incident.get("_id"),
+            user_name= incident['name'],
+            incident_info = incident['emergency_details'],
+            severity_score=incident['severity'],
+            location = incident['location'],
+            timestamp = incident['timestamp'],
+            transcribed_call = incident['transcript']
+            )
+
+            dt: datetime = incident['timestamp']
+
+            incident_list.append((dt, new_incident))
+
+        incident_list.sort()
+
+        result = [incident for _, incident in incident_list]
+
+        return result
             
 
 
