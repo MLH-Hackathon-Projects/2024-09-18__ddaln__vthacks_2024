@@ -12,6 +12,7 @@ def get_random_user():
         # Fetch a random user
         user = db_manager.fetch_random_user()
         if user:
+            print(jsonify(user))
             return jsonify(user)
         else:
             return jsonify({"message": "No user found"}), 404
