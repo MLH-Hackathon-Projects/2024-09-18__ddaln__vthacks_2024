@@ -23,7 +23,7 @@ def analyze_emergency_call(transcription):
         'num_people': 0,
         'mentioned_medical': 0,
         'mentioned_violence': 0,
-        'mentioned_fire_and_hazards': 0,
+        'mentioned_fire': 0,
         'mentioned_vehicular': 0,
         'mentioned_mental_health': 0,
         'mentioned_natural_disasters': 0,
@@ -65,6 +65,7 @@ def recognize_from_microphone():
         print(analysis)
         
         analysis = analysis.strip().strip('`')
+        analysis = analysis.strip().strip('python')
         
         dictionary = ast.literal_eval(analysis)
         print(dictionary)
