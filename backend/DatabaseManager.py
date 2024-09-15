@@ -9,14 +9,13 @@ from datetime import datetime
 
 class DatabaseManager:
     def __init__(self):
+        # Load environment variables
         load_dotenv()
-
-        self.uri = os.getenv("MONGO_URI")
-
-        if not self.uri:
+        uri = os.getenv("MONGO_URI")
+        if not uri:
             raise Exception("MONGO_URI not found in environment variables")
-        
-        self.client = MongoClient(self.uri, server_api=ServerApi('1'))
+        # Create a new client and connect to the server
+        self.client = MongoClient(uri, server_api=ServerApi('1'))
         self.db = self.client['Incidents']
         self.collection = self.db['IncidentReports']
 
@@ -33,7 +32,7 @@ class DatabaseManager:
     def fetch_random_user(self):
         try:
             # Fetch a single random document from the collection
-            user = self.collection.find_one({"name": "bob"})
+            user = self.collection.find_one({"name": "Daniel"})
             if user:
                 return self.serialize(user)
             return None
@@ -133,7 +132,8 @@ class DatabaseManager:
         return result
             
 
-
+db = DatabaseManager()
+db.fetch_random_user()
 
 
     
