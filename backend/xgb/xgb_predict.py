@@ -6,13 +6,12 @@ def predict_severity(data_dict: dict) -> float:
     Predicts severity score using the provided XGBoost model and data dictionary.
 
     Parameters:
-    - model_path (str): The path to the XGBoost model file.
     - data_dict (dict): A dictionary containing the input features for prediction.
 
     Returns:
-    - float: The predicted severity score.
+    - float: The predicted severity score rounded to 3 decimal places.
     """
-    CURR_MODEL_PATH = 'xgb/xgb_models/xgboost_model.json'
+    CURR_MODEL_PATH = 'backend/xgb/xgb_models/xgboost_model.json'
     # Load the model
     model = xgb.XGBRegressor()
     model.load_model(CURR_MODEL_PATH)
@@ -23,12 +22,13 @@ def predict_severity(data_dict: dict) -> float:
     # Predict
     y_pred = model.predict(test_df)
     
-    # Return the prediction
-    return y_pred[0]
+    # Ensure the prediction is a Python float
+    y_pred_value = float(y_pred[0])
+    
+    # Return the prediction rounded to 3 decimal places
+    return round(y_pred_value, 3)
 
 if __name__ == '__main__':
-    # Example usage
-    CURR_MODEL_PATH = 'xgb/xgb_models/xgboost_model.json'
     data = {
         'age': [30],
         'num_people': [1],
@@ -42,5 +42,5 @@ if __name__ == '__main__':
         'mentioned_suspicious_activity': [0],
         'mentioned_urgency': [1]
     }
-    severity_score = predict_severity(CURR_MODEL_PATH, data)
+    severity_score = predict_severity(data)
     print(f"Prediction: {severity_score}")

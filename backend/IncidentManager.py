@@ -1,6 +1,6 @@
-from vthacks_2024.backend.speech import recognize_from_microphone
+from speech import recognize_from_microphone
 from xgb import xgb_predict
-from vthacks_2024.backend.DatabaseManager import DatabaseManager
+from DatabaseManager import DatabaseManager
 
 speech_to_text_dict = recognize_from_microphone()
 

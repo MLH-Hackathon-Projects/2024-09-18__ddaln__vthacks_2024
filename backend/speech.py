@@ -19,7 +19,7 @@ def analyze_emergency_call(transcription):
         'name': '',
         'age': 0,
         'emergency_details': "",
-        'num_people': 0,
+        'num_people': 1,
         'mentioned_medical': 0,
         'mentioned_violence': 0,
         'mentioned_fire': 0,

@@ -4,11 +4,11 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 
-TUNING = False
+TUNING = True
 MODEL = 'xgboost_model'
 
 # Load dataset
-df = pd.read_csv('incident_features.csv')
+df = pd.read_csv('backend/incident_features.csv')
 df_numeric = df.apply(pd.to_numeric, errors='coerce')
 df_filled = df_numeric.fillna(0)
 df_cleaned = df_filled.drop(columns=['severity'])
@@ -26,7 +26,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Load the model
 model = xgb.XGBRegressor()
-model.load_model(f'xgb/xgb_models/{MODEL}.json')
+model.load_model(f'backend/xgb/xgb_models/{MODEL}.json')
 
 # Predict on test data
 y_pred = model.predict(X_test)
