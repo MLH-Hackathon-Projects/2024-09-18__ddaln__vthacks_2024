@@ -12,6 +12,7 @@ def predict_severity(data_dict: dict) -> float:
     - float: The predicted severity score rounded to 3 decimal places.
     """
     CURR_MODEL_PATH = 'backend/xgb/xgb_models/xgboost_model.json'
+    
     # Load the model
     model = xgb.XGBRegressor()
     model.load_model(CURR_MODEL_PATH)
@@ -19,6 +20,13 @@ def predict_severity(data_dict: dict) -> float:
     # Convert dictionary to DataFrame
     test_df = pd.DataFrame(data_dict)
     
+    # Ensure the DataFrame columns match the model's training features
+    expected_columns = ['age', 'num_people', 'mentioned_medical', 'mentioned_violence', 
+                        'mentioned_fire', 'mentioned_vehicular', 'mentioned_mental_health',
+                        'mentioned_natural_disasters', 'mentioned_environmental_hazards', 
+                        'mentioned_suspicious_activity', 'mentioned_urgency']
+    test_df = test_df.reindex(columns=expected_columns, fill_value=0)
+
     # Predict
     y_pred = model.predict(test_df)
     
