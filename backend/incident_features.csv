@@ -1,111 +1,191 @@
 location,age,emergency_details,num_people,mentioned_medical,mentioned_violence,mentioned_fire,mentioned_vehicular,mentioned_mental_health,mentioned_natural_disasters,mentioned_environmental_hazards,mentioned_suspicious_activity,mentioned_urgency,timestamp,severity
-Los Angeles,45,House Fire,3,0,0,1,0,0,0,0,0,1,2024-09-14 09:30:00,8.2
-Richmond,30,Drug Overdose,1,0,1,1,0,0,0,0,0,1,2024-09-14 08:00:00,9.5
-Miami,28,Car Accident,2,1,0,0,1,0,0,0,0,1,2024-09-14 10:15:00,7.9
-Chicago,62,Heart Attack,1,1,0,0,0,0,0,0,0,1,2024-09-14 11:45:00,9.8
-New York,35,Suspicious Package,1,0,0,0,0,0,0,1,1,1,2024-09-14 13:20:00,8.6
-San Francisco,22,Domestic Violence,2,0,1,0,0,1,0,0,0,1,2024-09-14 14:10:00,9.1
-Houston,55,Hurricane Evacuation,50,0,0,0,0,0,1,1,0,1,2024-09-14 15:00:00,9.9
-Seattle,40,Gunshot Wound,1,1,1,0,0,0,0,0,0,1,2024-09-14 16:25:00,9.7
-Dallas,33,Explosion,5,0,0,1,0,0,0,0,1,1,2024-09-14 17:35:00,9.4
-Boston,27,Suicide Threat,1,0,0,0,0,1,0,0,0,1,2024-09-14 18:50:00,8.3
-Philadelphia,41,Structural Collapse,3,0,0,1,0,0,1,0,0,1,2024-09-14 19:30:00,9.2
-Atlanta,50,Robbery in Progress,2,0,1,0,0,0,0,0,1,1,2024-09-14 20:10:00,8.5
-Phoenix,27,Severe Allergic Reaction,1,1,0,0,0,0,0,0,0,1,2024-09-14 21:00:00,8.9
-San Diego,38,Drug Overdose,2,1,0,0,0,0,0,0,0,1,2024-09-14 21:45:00,8.7
-San Jose,29,Fireworks Accident,4,0,0,1,0,0,0,0,1,1,2024-09-14 22:30:00,7.8
-Denver,33,Lost Child,1,0,0,0,0,0,0,1,0,1,2024-09-14 23:15:00,7.4
-Orlando,41,Heatstroke,2,1,0,0,0,0,0,0,0,1,2024-09-15 00:05:00,8.2
+Los Angeles,45,House Fire,3,0,0,1,0,0,0,0,0,1,2024-09-14 09:30:00,8.5
+Richmond,30,Drug Overdose,1,0,1,1,0,0,0,0,0,1,2024-09-14 08:00:00,8.0
+Miami,28,Car Accident,2,1,0,0,1,0,0,0,0,1,2024-09-14 10:15:00,7.5
+Chicago,62,Heart Attack,1,1,0,0,0,0,0,0,0,1,2024-09-14 11:45:00,9.0
+New York,35,Suspicious Package,1,0,0,0,0,0,0,1,1,1,2024-09-14 13:20:00,7.0
+San Francisco,22,Domestic Violence,2,0,1,0,0,1,0,0,0,1,2024-09-14 14:10:00,8.0
+Houston,55,Hurricane Evacuation,50,0,0,0,0,0,1,1,0,1,2024-09-14 15:00:00,9.5
+Seattle,40,Gunshot Wound,1,1,1,0,0,0,0,0,0,1,2024-09-14 16:25:00,9.0
+Dallas,33,Explosion,5,0,0,1,0,0,0,0,1,1,2024-09-14 17:35:00,9.0
+Boston,27,Suicide Threat,1,0,0,0,0,1,0,0,0,1,2024-09-14 18:50:00,8.5
+Philadelphia,41,Structural Collapse,3,0,0,1,0,0,1,0,0,1,2024-09-14 19:30:00,8.5
+Atlanta,50,Robbery in Progress,2,0,1,0,0,0,0,0,1,1,2024-09-14 20:10:00,7.5
+Phoenix,27,Severe Allergic Reaction,1,1,0,0,0,0,0,0,0,1,2024-09-14 21:00:00,7.5
+San Diego,38,Drug Overdose,2,1,0,0,0,0,0,0,0,1,2024-09-14 21:45:00,8.0
+San Jose,29,Fireworks Accident,4,0,0,1,0,0,0,0,1,1,2024-09-14 22:30:00,7.0
+Denver,33,Lost Child,1,0,0,0,0,0,0,1,0,1,2024-09-14 23:15:00,7.0
+Orlando,41,Heatstroke,2,1,0,0,0,0,0,0,0,1,2024-09-15 00:05:00,7.5
 Minneapolis,55,Building Fire,6,0,0,1,0,0,0,0,0,1,2024-09-15 00:50:00,9.0
-Detroit,44,Physical Assault,3,0,1,0,0,0,0,0,1,1,2024-09-15 01:30:00,8.8
-Las Vegas,34,Electrocution,1,1,0,0,0,0,0,0,0,1,2024-09-15 02:10:00,9.3
-Columbus,26,Animal Attack,2,1,0,0,0,0,0,0,0,1,2024-09-15 03:00:00,7.6
-Indianapolis,31,Severe Bleeding,1,1,0,0,0,0,0,0,0,1,2024-09-15 03:45:00,8.4
-Nashville,48,Missing Person,2,0,0,0,0,0,0,1,0,1,2024-09-15 04:30:00,7.7
-Kansas City,42,Explosion at Facility,4,0,0,1,0,0,0,0,1,1,2024-09-15 05:20:00,9.1
-Charlotte,30,Severe Chest Pain,1,1,0,0,0,0,0,0,0,1,2024-09-15 06:10:00,9.5
-St. Louis,29,Minor Vehicle Accident,2,0,0,0,1,0,0,0,0,1,2024-09-15 07:00:00,6.3
-Memphis,40,Minor Burns,1,1,0,0,0,0,0,0,0,1,2024-09-15 07:45:00,6.8
+Detroit,44,Physical Assault,3,0,1,0,0,0,0,0,1,1,2024-09-15 01:30:00,7.5
+Las Vegas,34,Electrocution,1,1,0,0,0,0,0,0,0,1,2024-09-15 02:10:00,8.5
+Columbus,26,Animal Attack,2,1,0,0,0,0,0,0,0,1,2024-09-15 03:00:00,7.0
+Indianapolis,31,Severe Bleeding,1,1,0,0,0,0,0,0,0,1,2024-09-15 03:45:00,8.0
+Nashville,48,Missing Person,2,0,0,0,0,0,0,1,0,1,2024-09-15 04:30:00,7.0
+Kansas City,42,Explosion at Facility,4,0,0,1,0,0,0,0,1,1,2024-09-15 05:20:00,8.5
+Charlotte,30,Severe Chest Pain,1,1,0,0,0,0,0,0,0,1,2024-09-15 06:10:00,8.0
+St. Louis,29,Minor Vehicle Accident,2,0,0,0,1,0,0,0,0,1,2024-09-15 07:00:00,5.0
+Memphis,40,Minor Burns,1,1,0,0,0,0,0,0,0,1,2024-09-15 07:45:00,5.5
 Baltimore,32,Domestic Dispute,2,0,1,0,0,0,0,0,0,1,2024-09-15 08:30:00,6.5
-Albuquerque,45,Public Intoxication,1,0,0,0,0,0,0,0,0,1,2024-09-15 09:15:00,5.9
-Oakland,27,Animal in the Road,1,0,0,0,0,0,0,1,0,1,2024-09-15 10:00:00,6.0
-Colorado Springs,38,Overdose (Non-fatal),1,1,0,0,0,0,0,0,0,1,2024-09-15 10:50:00,7.2
-Virginia Beach,33,Lost Pet,1,0,0,0,0,0,0,1,0,1,2024-09-15 11:35:00,5.7
-Tampa,26,Unresponsive Person (Not Breathing),1,1,0,0,0,0,0,0,0,1,2024-09-15 12:20:00,7.8
-Honolulu,50,Slip and Fall Injury,1,1,0,0,0,0,0,0,0,1,2024-09-15 13:05:00,6.4
-Jacksonville,41,Noise Complaint,1,0,0,0,0,0,0,0,1,1,2024-09-15 13:50:00,5.3
-Indianapolis,28,Food Poisoning,2,1,0,0,0,0,0,0,0,1,2024-09-15 14:40:00,6.6
-Cleveland,34,Insect Sting,1,1,0,0,0,0,0,0,0,1,2024-09-15 15:25:00,6.2
-Milwaukee,37,Minor Cut,1,1,0,0,0,0,0,0,0,1,2024-09-15 16:10:00,6.1
-Arlington,43,Dislocated Shoulder,1,1,0,0,0,0,0,0,0,1,2024-09-15 17:00:00,7.0
-San Antonio,39,Stray Dog Concern,1,0,0,0,0,0,0,1,0,1,2024-09-15 17:45:00,5.8
+Albuquerque,45,Public Intoxication,1,0,0,0,0,0,0,0,0,1,2024-09-15 09:15:00,4.0
+Oakland,27,Animal in the Road,1,0,0,0,0,0,0,1,0,1,2024-09-15 10:00:00,4.5
+Colorado Springs,38,Overdose (Non-fatal),1,1,0,0,0,0,0,0,0,1,2024-09-15 10:50:00,7.0
+Virginia Beach,33,Lost Pet,1,0,0,0,0,0,0,1,0,1,2024-09-15 11:35:00,3.0
+Tampa,26,Unresponsive Person (Not Breathing),1,1,0,0,0,0,0,0,0,1,2024-09-15 12:20:00,9.5
+Honolulu,50,Slip and Fall Injury,1,1,0,0,0,0,0,0,0,1,2024-09-15 13:05:00,6.0
+Jacksonville,41,Noise Complaint,1,0,0,0,0,0,0,0,1,1,2024-09-15 13:50:00,3.0
+Indianapolis,28,Food Poisoning,2,1,0,0,0,0,0,0,0,1,2024-09-15 14:40:00,5.5
+Cleveland,34,Insect Sting,1,1,0,0,0,0,0,0,0,1,2024-09-15 15:25:00,4.5
+Milwaukee,37,Minor Cut,1,1,0,0,0,0,0,0,0,1,2024-09-15 16:10:00,3.5
+Arlington,43,Dislocated Shoulder,1,1,0,0,0,0,0,0,0,1,2024-09-15 17:00:00,5.5
+San Antonio,39,Stray Dog Concern,1,0,0,0,0,0,0,1,0,1,2024-09-15 17:45:00,3.5
 New Orleans,24,Request for Pizza Delivery,1,0,0,0,0,0,0,0,1,1,2024-09-15 18:00:00,1.0
-Washington,29,Complaint about Loud Music,1,0,0,0,0,0,0,0,1,1,2024-09-15 18:45:00,1.5
-Philadelphia,32,Lost Car Keys,1,0,0,0,0,0,0,0,1,1,2024-09-15 19:30:00,1.2
-San Diego,22,Request for Directions,1,0,0,0,0,0,0,0,1,1,2024-09-15 20:15:00,0.5
-Seattle,28,Inconvenient Parking Space,1,0,0,0,0,0,0,0,1,1,2024-09-15 21:00:00,1.4
-Austin,34,Neighbor's Dog Barking,1,0,0,0,0,0,0,0,1,1,2024-09-15 21:45:00,1.1
-Detroit,31,General Inquiry about Road Conditions,1,0,0,0,0,0,0,0,1,1,2024-09-15 22:30:00,1.6
-San Francisco,25,Request for Noise Complaint Follow-Up,1,0,0,0,0,0,0,0,1,1,2024-09-15 23:15:00,1.2
-Chicago,27,Dispute over Internet Service,1,0,0,0,0,0,0,0,1,1,2024-09-16 00:00:00,1.3
-Miami,30,Confusion about Garbage Collection Schedule,1,0,0,0,0,0,0,0,1,1,2024-09-16 00:45:00,1.4
-Orlando,40,Minor Household Leak,1,0,0,0,0,0,0,1,0,1,2024-09-16 01:30:00,2.0
-Boston,33,Cat Stuck in a Tree,1,0,0,0,0,0,0,1,0,1,2024-09-16 02:10:00,2.5
+Washington,29,Complaint about Loud Music,1,0,0,0,0,0,0,0,1,1,2024-09-15 18:45:00,2.0
+Philadelphia,32,Lost Car Keys,1,0,0,0,0,0,0,0,1,1,2024-09-15 19:30:00,1.5
+San Diego,22,Request for Directions,1,0,0,0,0,0,0,0,1,1,2024-09-15 20:15:00,1.0
+Seattle,28,Inconvenient Parking Space,1,0,0,0,0,0,0,0,1,1,2024-09-15 21:00:00,1.5
+Austin,34,Neighbor's Dog Barking,1,0,0,0,0,0,0,0,1,1,2024-09-15 21:45:00,2.0
+Detroit,31,General Inquiry about Road Conditions,1,0,0,0,0,0,0,0,1,1,2024-09-15 22:30:00,1.5
+San Francisco,25,Request for Noise Complaint Follow-Up,1,0,0,0,0,0,0,0,1,1,2024-09-15 23:15:00,2.0
+Chicago,27,Dispute over Internet Service,1,0,0,0,0,0,0,0,1,1,2024-09-16 00:00:00,1.5
+Miami,30,Confusion about Garbage Collection Schedule,1,0,0,0,0,0,0,0,1,1,2024-09-16 00:45:00,1.0
+Orlando,40,Minor Household Leak,1,0,0,0,0,0,0,1,0,1,2024-09-16 01:30:00,2.5
+Boston,33,Cat Stuck in a Tree,1,0,0,0,0,0,0,1,0,1,2024-09-16 02:10:00,2.0
 Denver,29,Broken Window,1,0,0,0,0,0,0,0,1,1,2024-09-16 02:50:00,3.0
-Minneapolis,35,Clogged Toilet,1,0,0,0,0,0,0,0,1,1,2024-09-16 03:35:00,2.2
-Houston,38,Power Outage,1,0,0,0,0,0,0,1,0,1,2024-09-16 04:15:00,3.5
-Atlanta,41,Insect Infestation,1,0,0,0,0,0,0,0,1,1,2024-09-16 05:00:00,4.0
-Seattle,27,Traffic Jam (No Accident),1,0,0,0,0,0,0,0,1,1,2024-09-16 05:45:00,2.8
-San Jose,32,Unresponsive Vending Machine,1,0,0,0,0,0,0,0,1,1,2024-09-16 06:20:00,2.3
-San Antonio,45,Fridge Not Cooling,1,0,0,0,0,0,0,0,1,1,2024-09-16 07:10:00,3.2
+Minneapolis,35,Clogged Toilet,1,0,0,0,0,0,0,0,1,1,2024-09-16 03:35:00,2.0
+Houston,38,Power Outage,1,0,0,0,0,0,0,1,0,1,2024-09-16 04:15:00,4.0
+Atlanta,41,Insect Infestation,1,0,0,0,0,0,0,0,1,1,2024-09-16 05:00:00,2.5
+Seattle,27,Traffic Jam (No Accident),1,0,0,0,0,0,0,0,1,1,2024-09-16 05:45:00,2.5
+San Jose,32,Unresponsive Vending Machine,1,0,0,0,0,0,0,0,1,1,2024-09-16 06:20:00,1.0
+San Antonio,45,Fridge Not Cooling,1,0,0,0,0,0,0,0,1,1,2024-09-16 07:10:00,2.0
 Las Vegas,30,Lost Wallet,1,0,0,0,0,0,0,0,1,1,2024-09-16 08:00:00,3.0
-Indianapolis,24,Incorrect Billing Issue,1,0,0,0,0,0,0,0,1,1,2024-09-16 08:45:00,2.7
-St. Louis,37,Unpleasant Smell in Apartment,1,0,0,0,0,0,0,1,0,1,2024-09-16 09:30:00,3.1
-Philadelphia,28,Noisy Neighbor (No Threat),1,0,0,0,0,0,0,0,1,1,2024-09-16 10:15:00,2.9
-Charlotte,34,Low-Level Emergency Alert (False),1,0,0,0,0,0,0,0,1,1,2024-09-16 11:00:00,4.5
-Nashville,41,Defective Smoke Detector,1,0,0,1,0,0,0,0,0,1,2024-09-16 11:45:00,4.0
-Jacksonville,29,Loose Floorboard (No Injury),1,0,0,0,0,0,0,0,1,1,2024-09-16 12:30:00,3.3
-Cleveland,36,Clogged Sink,1,0,0,0,0,0,0,0,1,1,2024-09-16 13:15:00,2.6
-Miami,31,Minor Car Damage (No Accident),1,0,0,0,1,0,0,0,0,1,2024-09-16 14:00:00,4.2
-San Diego,43,Request for Assistance with Personal Issue,1,0,0,0,0,0,0,0,1,1,2024-09-16 14:45:00,2.4
-San Francisco,39,Small Fire (Extinguished by Homeowner),1,0,0,1,0,0,0,0,0,1,2024-09-16 15:30:00,4.0
-San Jose,25,Phone Battery Dead,1,0,0,0,0,0,0,0,1,1,2024-09-17 02:15:00,1.5
-St. Louis,31,Refrigerator Making Noise,1,0,0,0,0,0,0,0,1,1,2024-09-17 03:00:00,2.0
-Minneapolis,29,Minor Yard Flooding,1,0,0,0,0,0,0,1,0,1,2024-09-17 03:45:00,2.8
-Memphis,37,Vehicle Door Stuck,1,0,0,0,1,0,0,0,0,1,2024-09-17 04:30:00,3.1
-Indianapolis,42,Leaking Faucet,1,0,0,0,0,0,0,0,1,1,2024-09-17 05:15:00,2.5
-San Diego,30,Lost Item in Public Area,1,0,0,0,0,0,0,0,1,1,2024-09-17 06:00:00,3.0
-San Antonio,39,Minor Graffiti,1,0,0,0,0,0,0,1,0,1,2024-09-17 06:45:00,4.0
-Philadelphia,34,Noisy Plumbing,1,0,0,0,0,0,0,0,1,1,2024-09-17 07:30:00,2.7
-Chicago,41,Broken Mailbox,1,0,0,0,0,0,0,0,1,1,2024-09-17 08:15:00,3.3
-Dallas,27,Small Animal in Yard,1,0,0,0,0,0,0,1,0,1,2024-09-17 09:00:00,3.2
-Atlanta,36,Temporary Power Flicker,1,0,0,0,0,0,0,0,1,1,2024-09-17 09:45:00,4.1
-San Francisco,28,Non-Urgent Medical Question,1,0,0,0,0,0,0,0,1,1,2024-09-17 10:30:00,4.0
-Seattle,38,Cracked Window,1,0,0,0,0,0,0,0,1,1,2024-09-17 11:15:00,3.8
-Los Angeles,40,Repetitive Doorbell Ringing,1,0,0,0,0,0,0,0,1,1,2024-09-17 12:00:00,3.5
-New York,26,Non-Urgent Fire Alarm,1,0,0,1,0,0,0,0,0,1,2024-09-17 12:45:00,4.5
-Miami,33,Overgrown Lawn,1,0,0,0,0,0,0,1,0,1,2024-09-17 13:30:00,3.4
-Houston,30,Improperly Secured Trash,1,0,0,0,0,0,0,0,1,1,2024-09-17 14:15:00,2.9
-Denver,45,Minor Car Scratch,1,0,0,0,1,0,0,0,0,1,2024-09-17 15:00:00,4.3
-Boston,28,Unusual Odor in Kitchen,1,0,0,0,0,0,0,1,0,1,2024-09-17 15:45:00,3.7
-San Jose,34,Lost Personal Document,1,0,0,0,0,0,0,0,1,1,2024-09-17 16:30:00,3.1
-San Diego,40,Noisy Neighbors (No Threat),1,0,0,0,0,0,0,0,1,1,2024-09-17 17:15:00,2.8
-Charlotte,29,Minor Car Issue (No Breakdown),1,0,0,0,1,0,0,0,0,1,2024-09-17 18:00:00,3.6
-Philadelphia,38,Neighbor's Pet Disturbance,1,0,0,0,0,0,0,0,1,1,2024-09-17 18:45:00,2.9
-Dallas,27,Faulty Door Lock,1,0,0,0,0,0,0,1,0,1,2024-09-17 19:30:00,3.2
-Chicago,43,Erroneous Alarm Notification,1,0,0,0,0,0,0,0,1,1,2024-09-17 20:15:00,4.0
-Miami,35,Service Complaint,1,0,0,0,0,0,0,0,1,1,2024-09-17 21:00:00,2.7
-Atlanta,37,Minor Flooding (No Property Damage),1,0,0,0,0,0,0,1,0,1,2024-09-17 21:45:00,4.2
-San Francisco,32,Tripped Circuit Breaker,1,0,0,0,0,0,0,0,1,1,2024-09-17 22:30:00,4.1
-Los Angeles,29,Missing Package Delivery,1,0,0,0,0,0,0,0,1,1,2024-09-17 23:15:00,3.6
-New York,28,Intermittent Internet Service,1,0,0,0,0,0,0,0,1,1,2024-09-18 00:00:00,3.4
-San Diego,41,Unusual Bird Activity,1,0,0,0,0,0,0,1,0,1,2024-09-18 00:45:00,3.5
-Boston,30,Minor Animal Control Issue,1,0,0,0,0,0,0,1,0,1,2024-09-18 01:30:00,4.0
-San Antonio,35,Broken Key in Lock,1,0,0,0,0,0,0,0,1,1,2024-09-18 02:15:00,3.8
-Denver,27,False Carbon Monoxide Alarm,1,0,0,1,0,0,0,0,0,1,2024-09-18 03:00:00,4.4
-Philadelphia,33,Temporary Water Pressure Drop,1,0,0,0,0,0,0,0,1,1,2024-09-18 03:45:00,3.3
-Houston,30,Errant Shopping Cart in Parking Lot,1,0,0,0,0,0,0,0,1,1,2024-09-18 04:30:00,2.6
-San Jose,39,Non-Urgent Package Delivery Issue,1,0,0,0,0,0,0,0,1,1,2024-09-18 05:15:00,3.2
-San Francisco,31,Broken Garden Hose,1,0,0,0,0,0,0,0,1,1,2024-09-18 06:00:00,2.9
-Seattle,34,Small Trash Spill,1,0,0,0,0,0,0,0,1,1,2024-09-18 06:45:00,3.1
-Dallas,37,Non-Urgent Complaint About Store Service,1,0,0,0,0,0,0,0,1,1,2024-09-18 07:30:00,2.8
+Indianapolis,24,Incorrect Billing Issue,1,0,0,0,0,0,0,0,1,1,2024-09-16 08:45:00,1.5
+St. Louis,37,Unpleasant Smell in Apartment,1,0,0,0,0,0,0,1,0,1,2024-09-16 09:30:00,2.5
+Philadelphia,28,Noisy Neighbor (No Threat),1,0,0,0,0,0,0,0,1,1,2024-09-16 10:15:00,2.5
+Charlotte,34,Low-Level Emergency Alert (False),1,0,0,0,0,0,0,0,1,1,2024-09-16 11:00:00,3.0
+Nashville,41,Defective Smoke Detector,1,0,0,1,0,0,0,0,0,1,2024-09-16 11:45:00,4.5
+Jacksonville,29,Loose Floorboard (No Injury),1,0,0,0,0,0,0,0,1,1,2024-09-16 12:30:00,2.0
+Cleveland,36,Clogged Sink,1,0,0,0,0,0,0,0,1,1,2024-09-16 13:15:00,1.5
+Miami,31,Minor Car Damage (No Accident),1,0,0,0,1,0,0,0,0,1,2024-09-16 14:00:00,2.5
+San Diego,43,Request for Assistance with Personal Issue,1,0,0,0,0,0,0,0,1,1,2024-09-16 14:45:00,2.0
+San Francisco,39,Small Fire (Extinguished by Homeowner),1,0,0,1,0,0,0,0,0,1,2024-09-16 15:30:00,4.5
+San Jose,25,Phone Battery Dead,1,0,0,0,0,0,0,0,1,1,2024-09-17 02:15:00,1.0
+St. Louis,31,Refrigerator Making Noise,1,0,0,0,0,0,0,0,1,1,2024-09-17 03:00:00,1.5
+Minneapolis,29,Minor Yard Flooding,1,0,0,0,0,0,0,1,0,1,2024-09-17 03:45:00,3.0
+Memphis,37,Vehicle Door Stuck,1,0,0,0,1,0,0,0,0,1,2024-09-17 04:30:00,2.0
+Indianapolis,42,Leaking Faucet,1,0,0,0,0,0,0,0,1,1,2024-09-17 05:15:00,2.0
+San Diego,30,Lost Item in Public Area,1,0,0,0,0,0,0,0,1,1,2024-09-17 06:00:00,2.5
+San Antonio,39,Minor Graffiti,1,0,0,0,0,0,0,1,0,1,2024-09-17 06:45:00,2.0
+Philadelphia,34,Noisy Plumbing,1,0,0,0,0,0,0,0,1,1,2024-09-17 07:30:00,1.5
+Chicago,41,Broken Mailbox,1,0,0,0,0,0,0,0,1,1,2024-09-17 08:15:00,2.0
+Dallas,27,Small Animal in Yard,1,0,0,0,0,0,0,1,0,1,2024-09-17 09:00:00,2.5
+Atlanta,36,Temporary Power Flicker,1,0,0,0,0,0,0,0,1,1,2024-09-17 09:45:00,3.0
+San Francisco,28,Non-Urgent Medical Question,1,0,0,0,0,0,0,0,1,1,2024-09-17 10:30:00,3.0
+Portland,29,Multi-Vehicle Pileup,12,1,0,0,1,0,0,0,0,1,2024-09-18 08:15:00,9.0
+Tucson,47,Gas Leak in Apartment Complex,20,0,0,0,0,0,0,1,0,1,2024-09-18 09:00:00,8.5
+Raleigh,31,Armed Robbery at Convenience Store,3,0,1,0,0,0,0,0,1,1,2024-09-18 09:45:00,8.0
+Omaha,52,Severe Chest Pain,1,1,0,0,0,0,0,0,0,1,2024-09-18 10:30:00,8.5
+Sacramento,38,Toddler Locked in Hot Car,2,1,0,0,1,0,0,0,0,1,2024-09-18 11:15:00,8.5
+Kansas City,25,Drowning at Public Pool,1,1,0,0,0,0,0,0,0,1,2024-09-18 12:00:00,9.5
+Long Beach,41,Workplace Accident - Machinery,1,1,0,0,0,0,0,0,0,1,2024-09-18 12:45:00,8.0
+Mesa,33,Domestic Dispute with Weapon,2,0,1,0,0,0,0,0,1,1,2024-09-18 13:30:00,8.5
+Fresno,57,Stroke Symptoms,1,1,0,0,0,0,0,0,0,1,2024-09-18 14:15:00,9.0
+Atlanta,22,Attempted Suicide,1,1,0,0,0,1,0,0,0,1,2024-09-18 15:00:00,9.0
+Oakland,36,Home Invasion,4,0,1,0,0,0,0,0,1,1,2024-09-18 15:45:00,8.5
+Tulsa,49,Carbon Monoxide Alarm,3,1,0,0,0,0,0,1,0,1,2024-09-18 16:30:00,8.0
+Cleveland,28,Severe Allergic Reaction,1,1,0,0,0,0,0,0,0,1,2024-09-18 17:15:00,8.0
+Wichita,39,Missing Person - Elderly with Dementia,1,1,0,0,0,1,0,0,0,1,2024-09-18 18:00:00,7.5
+Arlington,51,Structure Fire - Commercial Building,0,0,0,1,0,0,0,0,0,1,2024-09-18 18:45:00,9.0
+Bakersfield,24,Suspected Drug Lab,2,0,0,0,0,0,0,1,1,1,2024-09-18 19:30:00,7.5
+New Orleans,44,Flooding - Multiple Streets,0,0,0,0,0,0,1,1,0,1,2024-09-18 20:15:00,7.0
+Honolulu,30,Shark Sighting Near Beach,0,0,0,0,0,0,0,1,0,1,2024-09-18 21:00:00,6.5
+Anaheim,35,Child Abduction Attempt,2,0,1,0,0,0,0,0,1,1,2024-09-18 21:45:00,9.5
+Tampa,27,Severe Weather - Tornado Warning,0,0,0,0,0,0,1,0,0,1,2024-09-18 22:30:00,8.0
+Aurora,48,Unconscious Person in Public,1,1,0,0,0,0,0,0,0,1,2024-09-18 23:15:00,8.0
+Santa Ana,32,Vehicle vs Pedestrian,2,1,0,0,1,0,0,0,0,1,2024-09-19 00:00:00,8.5
+St. Louis,40,Shots Fired,0,0,1,0,0,0,0,0,1,1,2024-09-19 00:45:00,8.0
+Pittsburgh,53,Elevator Stuck with People Inside,3,0,0,0,0,0,0,0,0,1,2024-09-19 01:30:00,6.0
+Riverside,29,Suspicious Person Following Children,2,0,0,0,0,0,0,0,1,1,2024-09-19 02:15:00,7.0
+Corpus Christi,37,Industrial Chemical Spill,0,0,0,0,0,0,0,1,0,1,2024-09-19 03:00:00,8.5
+Lexington,46,Bomb Threat at Shopping Mall,0,0,1,0,0,0,0,0,1,1,2024-09-19 03:45:00,9.0
+Anchorage,31,Bear in Residential Area,0,0,0,0,0,0,0,1,0,1,2024-09-19 04:30:00,6.5
+Stockton,25,Attempted Carjacking,2,0,1,0,1,0,0,0,1,1,2024-09-19 05:15:00,8.0
+Cincinnati,58,Severe Burns from Household Accident,1,1,0,0,0,0,0,0,0,1,2024-09-19 06:00:00,8.0
+St. Paul,34,Domestic Violence with Children Present,4,0,1,0,0,0,0,0,0,1,2024-09-19 06:45:00,8.5
+Toledo,42,Suspected Heart Attack in Restaurant,1,1,0,0,0,0,0,0,0,1,2024-09-19 07:30:00,9.0
+Newark,26,Armed Robbery at ATM,2,0,1,0,0,0,0,0,1,1,2024-09-19 08:15:00,8.0
+Greensboro,50,House Fire with Trapped Residents,5,0,0,1,0,0,0,0,0,1,2024-09-19 09:00:00,9.5
+Plano,33,Major Traffic Accident on Highway,6,1,0,0,1,0,0,0,0,1,2024-09-19 09:45:00,8.5
+Henderson,39,Missing Child - Last Seen at Park,1,0,0,0,0,0,0,0,1,1,2024-09-19 10:30:00,8.0
+Lincoln,45,Workplace Shooting,3,1,1,0,0,0,0,0,1,1,2024-09-19 11:15:00,9.5
+Buffalo,28,Overdose in Public Restroom,1,1,0,0,0,0,0,0,0,1,2024-09-19 12:00:00,8.0
+Fort Wayne,61,Elderly Fall Victim - Unable to Get Up,1,1,0,0,0,0,0,0,0,1,2024-09-19 12:45:00,6.5
+Jersey City,19,Underage Drinking Party,10,0,0,0,0,0,0,0,1,1,2024-09-19 13:30:00,5.0
+Chula Vista,43,Attempted Suicide by Overdose,1,1,0,0,0,1,0,0,0,1,2024-09-19 14:15:00,9.0
+Orlando,37,Large Fight at Nightclub,15,0,1,0,0,0,0,0,1,1,2024-09-19 15:00:00,7.5
+St. Petersburg,52,Severe Thunderstorm - Downed Power Lines,0,0,0,0,0,0,1,1,0,1,2024-09-19 15:45:00,7.0
+Norfolk,29,Sexual Assault Report,1,1,1,0,0,0,0,0,1,1,2024-09-19 16:30:00,8.5
+Chandler,34,Car Break-in in Progress,1,0,1,0,1,0,0,0,1,1,2024-09-19 17:15:00,6.5
+Laredo,46,Smoke Alarm Activation - No Visible Fire,3,0,0,1,0,0,0,0,0,1,2024-09-19 18:00:00,6.0
+Madison,23,Intoxicated Driver Report,1,0,0,0,1,0,0,0,1,1,2024-09-19 18:45:00,7.0
+Durham,55,Collapsed Lung - Difficulty Breathing,1,1,0,0,0,0,0,0,0,1,2024-09-19 19:30:00,9.0
+Lubbock,38,Child Locked in Bathroom,1,0,0,0,0,0,0,0,0,1,2024-09-19 20:15:00,4.0
+Winston-Salem,41,Unconscious Person at Gym,1,1,0,0,0,0,0,0,0,1,2024-09-19 21:00:00,8.0
+Garland,27,Stolen Vehicle in Progress,1,0,1,0,1,0,0,0,1,1,2024-09-19 21:45:00,7.0
+Glendale,49,Dog Attack on Child,2,1,0,0,0,0,0,0,0,1,2024-09-19 22:30:00,8.0
+Hialeah,32,Broken Water Main - Street Flooding,0,0,0,0,0,0,0,1,0,1,2024-09-19 23:15:00,6.5
+Reno,36,Stalking Complaint,1,0,1,0,0,0,0,0,1,1,2024-09-20 00:00:00,6.0
+Baton Rouge,44,Severe Allergic Reaction - Restaurant,1,1,0,0,0,0,0,0,0,1,2024-09-20 00:45:00,8.0
+Irvine,30,Suspicious Package at Government Building,0,0,0,0,0,0,0,0,1,1,2024-09-20 01:30:00,7.5
+Chesapeake,57,Diabetic Emergency - Unresponsive,1,1,0,0,0,0,0,0,0,1,2024-09-20 02:15:00,8.5
+Irving,25,Indecent Exposure at Park,1,0,1,0,0,0,0,0,1,1,2024-09-20 03:00:00,5.5
+Scottsdale,39,Robbery at Jewelry Store,3,0,1,0,0,0,0,0,1,1,2024-09-20 03:45:00,8.0
+North Las Vegas,48,Severe Nosebleed - Unable to Stop,1,1,0,0,0,0,0,0,0,1,2024-09-20 04:30:00,6.5
+Fremont,33,Trespassing at Closed Business,2,0,0,0,0,0,0,0,1,1,2024-09-20 05:15:00,5.0
+Boise,42,Missing Person - Teenager,1,0,0,0,0,0,0,0,1,1,2024-09-20 06:00:00,7.0
+Richmond,29,Apartment Fire - Multiple Units,0,0,0,1,0,0,0,0,0,1,2024-09-20 06:45:00,8.5
+San Bernardino,51,Road Rage Incident with Weapon,2,0,1,0,1,0,0,0,1,1,2024-09-20 07:30:00,8.0
+Birmingham,35,Illegal Fireworks Complaint,0,0,0,1,0,0,0,0,1,1,2024-09-20 08:15:00,4.5
+Spokane,47,Attempted Suicide - Jumper on Bridge,1,0,0,0,0,1,0,0,0,1,2024-09-20 09:00:00,9.0
+Rochester,26,Noise Complaint - Loud Party,10,0,0,0,0,0,0,0,1,1,2024-09-20 09:45:00,3.5
+Des Moines,38,Shoplifting in Progress,1,0,1,0,0,0,0,0,1,1,2024-09-20 10:30:00,5.5
+Modesto,53,Choking Victim at Restaurant,1,1,0,0,0,0,0,0,0,1,2024-09-20 11:15:00,8.5
+Fayetteville,31,Burglary in Progress - Residential,2,0,1,0,0,0,0,0,1,1,2024-09-20 12:00:00,7.5
+Tacoma,45,Unattended Death,1,1,0,0,0,0,0,0,0,1,2024-09-20 12:45:00,6.0
+Oxnard,28,Vandalism to Public Property,0,0,1,0,0,0,0,0,1,1,2024-09-20 13:30:00,4.0
+Fontana,36,Child Left in Vehicle - Non-emergency,1,0,0,0,1,0,0,0,0,1,2024-09-20 14:15:00,6.0
+Columbus,50,Severe Stomach Pain,1,1,0,0,0,0,0,0,0,1,2024-09-20 15:00:00,7.0
+Montgomery,24,Suspected Drunk Driver,1,0,0,0,1,0,0,0,1,1,2024-09-20 15:45:00,7.0
+Moreno Valley,41,Lost Hiker - State Park,1,0,0,0,0,0,0,1,0,1,2024-09-20 16:30:00,6.5
+Shreveport,33,Domestic Dispute - Verbal Only,2,0,1,0,0,0,0,0,0,1,2024-09-20 17:15:00,5.5
+Aurora,59,Stroke Symptoms,1,1,0,0,0,0,0,0,0,1,2024-09-20 18:00:00,9.0
+Sacramento,28,Lost Pet,1,0,0,0,0,0,0,1,0,1,2024-09-20 19:30:00,2.5
+Boise,42,Minor Fender Bender,2,0,0,0,1,0,0,0,0,1,2024-09-20 20:15:00,3.0
+Fresno,35,Locked Out of Vehicle,1,0,0,0,1,0,0,0,0,1,2024-09-20 21:00:00,2.0
+Tucson,51,Noise Complaint - Barking Dog,1,0,0,0,0,0,0,0,1,1,2024-09-20 21:45:00,2.5
+Omaha,29,Water Pressure Low,1,0,0,0,0,0,0,1,0,1,2024-09-20 22:30:00,2.0
+Raleigh,39,Fallen Tree Branch on Sidewalk,1,0,0,0,0,0,0,1,0,1,2024-09-20 23:15:00,3.5
+Mesa,44,Broken Streetlight,1,0,0,0,0,0,0,1,0,1,2024-09-21 00:00:00,2.0
+Tulsa,31,Minor Cooking Fire (Extinguished),1,0,0,1,0,0,0,0,0,1,2024-09-21 00:45:00,3.5
+Wichita,47,Suspicious Person in Neighborhood,1,0,0,0,0,0,0,0,1,1,2024-09-21 01:30:00,4.0
+Arlington,26,Non-Injury Fall,1,1,0,0,0,0,0,0,0,1,2024-09-21 02:15:00,3.0
+Bakersfield,33,Minor Bee Sting Reaction,1,1,0,0,0,0,0,0,0,1,2024-09-21 03:00:00,3.5
+Aurora,55,Trash Not Collected,1,0,0,0,0,0,0,1,0,1,2024-09-21 03:45:00,1.5
+Anaheim,38,Graffiti Report,1,0,0,0,0,0,0,1,0,1,2024-09-21 04:30:00,2.5
+Santa Ana,41,Lost Wallet,1,0,0,0,0,0,0,0,1,1,2024-09-21 05:15:00,2.0
+Corpus Christi,29,Broken Window (Non-Emergency),1,0,0,0,0,0,0,0,1,1,2024-09-21 06:00:00,3.0
+Riverside,50,Clogged Storm Drain,1,0,0,0,0,0,0,1,0,1,2024-09-21 06:45:00,3.5
+Lexington,36,Minor Playground Injury,1,1,0,0,0,0,0,0,0,1,2024-09-21 07:30:00,3.0
+St. Paul,43,Parking Violation,1,0,0,0,1,0,0,0,1,1,2024-09-21 08:15:00,2.5
+Henderson,27,Broken Air Conditioning,1,0,0,0,0,0,0,0,1,1,2024-09-21 09:00:00,2.0
+Stockton,52,Lost Cell Phone,1,0,0,0,0,0,0,0,1,1,2024-09-21 09:45:00,1.5
+Cincinnati,34,Minor Bicycle Accident,1,1,0,0,0,0,0,0,0,1,2024-09-21 10:30:00,3.5
+Greensboro,46,Illegal Dumping Report,1,0,0,0,0,0,0,1,0,1,2024-09-21 11:15:00,3.0
+Plano,30,Vending Machine Malfunction,1,0,0,0,0,0,0,0,1,1,2024-09-21 12:00:00,1.0
+Lincoln,49,Non-Emergency Medical Transport Request,1,1,0,0,0,0,0,0,0,1,2024-09-21 12:45:00,3.5
+Buffalo,32,Toilet Overflow,1,0,0,0,0,0,0,0,1,1,2024-09-21 13:30:00,2.5
+Fort Wayne,40,Malfunctioning Traffic Light,1,0,0,0,1,0,0,0,0,1,2024-09-21 14:15:00,4.0
+Jersey City,25,Minor Cut - First Aid Only,1,1,0,0,0,0,0,0,0,1,2024-09-21 15:00:00,2.5
+Chula Vista,37,Stray Animal Sighting,1,0,0,0,0,0,0,1,0,1,2024-09-21 15:45:00,2.0
+Orlando,53,Elevator Out of Service,1,0,0,0,0,0,0,0,1,1,2024-09-21 16:30:00,3.0
+St. Petersburg,28,Broken Sprinkler System,1,0,0,0,0,0,0,1,0,1,2024-09-21 17:15:00,2.0
