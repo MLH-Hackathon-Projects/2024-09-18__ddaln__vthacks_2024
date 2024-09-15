@@ -8,7 +8,7 @@ genai.configure(api_key=GEMINI_API)
 
 def analyze_emergency_call(transcription):
     prompt = f"""
-    Analyze the following 911 emergency call transcription and extract key information for first responders:
+    Analyze the following 911 emergency call transcription and extract key information for first responders, no more than one sentence for emergency_details:
     
 
     Transcription: {transcription}
