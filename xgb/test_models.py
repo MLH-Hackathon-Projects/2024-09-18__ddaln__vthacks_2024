@@ -14,11 +14,11 @@ df_filled = df_numeric.fillna(0)
 df_cleaned = df_filled.drop(columns=['severity'])
 
 # Convert categorical variables
-df['Location'] = df['Location'].astype('category').cat.codes
+df['location'] = df['location'].astype('category').cat.codes
 df['emergency_details'] = df['emergency_details'].astype('category').cat.codes
 
 # Define feature set and target
-X = df_cleaned[['Age','num_people','medical','violence','fire','vehicular','mental_health','natural_disasters','environmental_hazards','suspicious_activity','urgency']]
+X = df_cleaned[['age','num_people','mentioned_medical','mentioned_violence','mentioned_fire','mentioned_vehicular','mentioned_mental_health','mentioned_natural_disasters','mentioned_environmental_hazards','mentioned_suspicious_activity','mentioned_urgency']]
 y = df['severity']
 
 # Split the data into training and test sets

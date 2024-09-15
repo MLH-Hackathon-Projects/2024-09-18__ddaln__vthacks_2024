@@ -1,111 +1,111 @@
-ID,Location,Age,emergency_details,num_people,medical,violence,fire,vehicular,mental_health,natural_disasters,environmental_hazards,suspicious_activity,urgency,timestamp,severity
-1,Richmond,30,Drug Overdose,1,0,1,1,0,0,0,0,0,1,2024-09-14 08:00:00,9.5
-2,Los Angeles,45,House Fire,3,0,0,1,0,0,0,0,0,1,2024-09-14 09:30:00,8.2
-3,Miami,28,Car Accident,2,1,0,0,1,0,0,0,0,1,2024-09-14 10:15:00,7.9
-4,Chicago,62,Heart Attack,1,1,0,0,0,0,0,0,0,1,2024-09-14 11:45:00,9.8
-5,New York,35,Suspicious Package,1,0,0,0,0,0,0,1,1,1,2024-09-14 13:20:00,8.6
-6,San Francisco,22,Domestic Violence,2,0,1,0,0,1,0,0,0,1,2024-09-14 14:10:00,9.1
-7,Houston,55,Hurricane Evacuation,50,0,0,0,0,0,1,1,0,1,2024-09-14 15:00:00,9.9
-8,Seattle,40,Gunshot Wound,1,1,1,0,0,0,0,0,0,1,2024-09-14 16:25:00,9.7
-9,Dallas,33,Explosion,5,0,0,1,0,0,0,0,1,1,2024-09-14 17:35:00,9.4
-10,Boston,27,Suicide Threat,1,0,0,0,0,1,0,0,0,1,2024-09-14 18:50:00,8.3
-11,Philadelphia,41,Structural Collapse,3,0,0,1,0,0,1,0,0,1,2024-09-14 19:30:00,9.2
-12,Atlanta,50,Robbery in Progress,2,0,1,0,0,0,0,0,1,1,2024-09-14 20:10:00,8.5
-13,Phoenix,27,Severe Allergic Reaction,1,1,0,0,0,0,0,0,0,1,2024-09-14 21:00:00,8.9
-14,San Diego,38,Drug Overdose,2,1,0,0,0,0,0,0,0,1,2024-09-14 21:45:00,8.7
-15,San Jose,29,Fireworks Accident,4,0,0,1,0,0,0,0,1,1,2024-09-14 22:30:00,7.8
-16,Denver,33,Lost Child,1,0,0,0,0,0,0,1,0,1,2024-09-14 23:15:00,7.4
-17,Orlando,41,Heatstroke,2,1,0,0,0,0,0,0,0,1,2024-09-15 00:05:00,8.2
-18,Minneapolis,55,Building Fire,6,0,0,1,0,0,0,0,0,1,2024-09-15 00:50:00,9.0
-19,Detroit,44,Physical Assault,3,0,1,0,0,0,0,0,1,1,2024-09-15 01:30:00,8.8
-20,Las Vegas,34,Electrocution,1,1,0,0,0,0,0,0,0,1,2024-09-15 02:10:00,9.3
-21,Columbus,26,Animal Attack,2,1,0,0,0,0,0,0,0,1,2024-09-15 03:00:00,7.6
-22,Indianapolis,31,Severe Bleeding,1,1,0,0,0,0,0,0,0,1,2024-09-15 03:45:00,8.4
-23,Nashville,48,Missing Person,2,0,0,0,0,0,0,1,0,1,2024-09-15 04:30:00,7.7
-24,Kansas City,42,Explosion at Facility,4,0,0,1,0,0,0,0,1,1,2024-09-15 05:20:00,9.1
-25,Charlotte,30,Severe Chest Pain,1,1,0,0,0,0,0,0,0,1,2024-09-15 06:10:00,9.5
-26,St. Louis,29,Minor Vehicle Accident,2,0,0,0,1,0,0,0,0,1,2024-09-15 07:00:00,6.3
-27,Memphis,40,Minor Burns,1,1,0,0,0,0,0,0,0,1,2024-09-15 07:45:00,6.8
-28,Baltimore,32,Domestic Dispute,2,0,1,0,0,0,0,0,0,1,2024-09-15 08:30:00,6.5
-29,Albuquerque,45,Public Intoxication,1,0,0,0,0,0,0,0,0,1,2024-09-15 09:15:00,5.9
-30,Oakland,27,Animal in the Road,1,0,0,0,0,0,0,1,0,1,2024-09-15 10:00:00,6.0
-31,Colorado Springs,38,Overdose (Non-fatal),1,1,0,0,0,0,0,0,0,1,2024-09-15 10:50:00,7.2
-32,Virginia Beach,33,Lost Pet,1,0,0,0,0,0,0,1,0,1,2024-09-15 11:35:00,5.7
-33,Tampa,26,Unresponsive Person (Not Breathing),1,1,0,0,0,0,0,0,0,1,2024-09-15 12:20:00,7.8
-34,Honolulu,50,Slip and Fall Injury,1,1,0,0,0,0,0,0,0,1,2024-09-15 13:05:00,6.4
-35,Jacksonville,41,Noise Complaint,1,0,0,0,0,0,0,0,1,1,2024-09-15 13:50:00,5.3
-36,Indianapolis,28,Food Poisoning,2,1,0,0,0,0,0,0,0,1,2024-09-15 14:40:00,6.6
-37,Cleveland,34,Insect Sting,1,1,0,0,0,0,0,0,0,1,2024-09-15 15:25:00,6.2
-38,Milwaukee,37,Minor Cut,1,1,0,0,0,0,0,0,0,1,2024-09-15 16:10:00,6.1
-39,Arlington,43,Dislocated Shoulder,1,1,0,0,0,0,0,0,0,1,2024-09-15 17:00:00,7.0
-40,San Antonio,39,Stray Dog Concern,1,0,0,0,0,0,0,1,0,1,2024-09-15 17:45:00,5.8
-41,New Orleans,24,Request for Pizza Delivery,1,0,0,0,0,0,0,0,1,1,2024-09-15 18:00:00,1.0
-42,Washington,29,Complaint about Loud Music,1,0,0,0,0,0,0,0,1,1,2024-09-15 18:45:00,1.5
-43,Philadelphia,32,Lost Car Keys,1,0,0,0,0,0,0,0,1,1,2024-09-15 19:30:00,1.2
-44,San Diego,22,Request for Directions,1,0,0,0,0,0,0,0,1,1,2024-09-15 20:15:00,1.3
-45,Seattle,28,Inconvenient Parking Space,1,0,0,0,0,0,0,0,1,1,2024-09-15 21:00:00,1.4
-46,Austin,34,Neighbor's Dog Barking,1,0,0,0,0,0,0,0,1,1,2024-09-15 21:45:00,1.1
-47,Detroit,31,General Inquiry about Road Conditions,1,0,0,0,0,0,0,0,1,1,2024-09-15 22:30:00,1.6
-48,San Francisco,25,Request for Noise Complaint Follow-Up,1,0,0,0,0,0,0,0,1,1,2024-09-15 23:15:00,1.2
-49,Chicago,27,Dispute over Internet Service,1,0,0,0,0,0,0,0,1,1,2024-09-16 00:00:00,1.3
-50,Miami,30,Confusion about Garbage Collection Schedule,1,0,0,0,0,0,0,0,1,1,2024-09-16 00:45:00,1.4
-51,Orlando,40,Minor Household Leak,1,0,0,0,0,0,0,1,0,1,2024-09-16 01:30:00,2.0
-52,Boston,33,Cat Stuck in a Tree,1,0,0,0,0,0,0,1,0,1,2024-09-16 02:10:00,2.5
-53,Denver,29,Broken Window,1,0,0,0,0,0,0,0,1,1,2024-09-16 02:50:00,3.0
-54,Minneapolis,35,Clogged Toilet,1,0,0,0,0,0,0,0,1,1,2024-09-16 03:35:00,2.2
-55,Houston,38,Power Outage,1,0,0,0,0,0,0,1,0,1,2024-09-16 04:15:00,3.5
-56,Atlanta,41,Insect Infestation,1,0,0,0,0,0,0,0,1,1,2024-09-16 05:00:00,4.0
-57,Seattle,27,Traffic Jam (No Accident),1,0,0,0,0,0,0,0,1,1,2024-09-16 05:45:00,2.8
-58,San Jose,32,Unresponsive Vending Machine,1,0,0,0,0,0,0,0,1,1,2024-09-16 06:20:00,2.3
-59,San Antonio,45,Fridge Not Cooling,1,0,0,0,0,0,0,0,1,1,2024-09-16 07:10:00,3.2
-60,Las Vegas,30,Lost Wallet,1,0,0,0,0,0,0,0,1,1,2024-09-16 08:00:00,3.0
-61,Indianapolis,24,Incorrect Billing Issue,1,0,0,0,0,0,0,0,1,1,2024-09-16 08:45:00,2.7
-62,St. Louis,37,Unpleasant Smell in Apartment,1,0,0,0,0,0,0,1,0,1,2024-09-16 09:30:00,3.1
-63,Philadelphia,28,Noisy Neighbor (No Threat),1,0,0,0,0,0,0,0,1,1,2024-09-16 10:15:00,2.9
-64,Charlotte,34,Low-Level Emergency Alert (False),1,0,0,0,0,0,0,0,1,1,2024-09-16 11:00:00,4.5
-65,Nashville,41,Defective Smoke Detector,1,0,0,1,0,0,0,0,0,1,2024-09-16 11:45:00,4.0
-66,Jacksonville,29,Loose Floorboard (No Injury),1,0,0,0,0,0,0,0,1,1,2024-09-16 12:30:00,3.3
-67,Cleveland,36,Clogged Sink,1,0,0,0,0,0,0,0,1,1,2024-09-16 13:15:00,2.6
-68,Miami,31,Minor Car Damage (No Accident),1,0,0,0,1,0,0,0,0,1,2024-09-16 14:00:00,4.2
-69,San Diego,43,Request for Assistance with Personal Issue,1,0,0,0,0,0,0,0,1,1,2024-09-16 14:45:00,2.4
-70,San Francisco,39,Small Fire (Extinguished by Homeowner),1,0,0,1,0,0,0,0,0,1,2024-09-16 15:30:00,4.0
-85,San Jose,25,Phone Battery Dead,1,0,0,0,0,0,0,0,1,1,2024-09-17 02:15:00,1.5
-86,St. Louis,31,Refrigerator Making Noise,1,0,0,0,0,0,0,0,1,1,2024-09-17 03:00:00,2.0
-87,Minneapolis,29,Minor Yard Flooding,1,0,0,0,0,0,0,1,0,1,2024-09-17 03:45:00,2.8
-88,Memphis,37,Vehicle Door Stuck,1,0,0,0,1,0,0,0,0,1,2024-09-17 04:30:00,3.1
-89,Indianapolis,42,Leaking Faucet,1,0,0,0,0,0,0,0,1,1,2024-09-17 05:15:00,2.5
-90,San Diego,30,Lost Item in Public Area,1,0,0,0,0,0,0,0,1,1,2024-09-17 06:00:00,3.0
-91,San Antonio,39,Minor Graffiti,1,0,0,0,0,0,0,1,0,1,2024-09-17 06:45:00,4.0
-92,Philadelphia,34,Noisy Plumbing,1,0,0,0,0,0,0,0,1,1,2024-09-17 07:30:00,2.7
-93,Chicago,41,Broken Mailbox,1,0,0,0,0,0,0,0,1,1,2024-09-17 08:15:00,3.3
-94,Dallas,27,Small Animal in Yard,1,0,0,0,0,0,0,1,0,1,2024-09-17 09:00:00,3.2
-95,Atlanta,36,Temporary Power Flicker,1,0,0,0,0,0,0,0,1,1,2024-09-17 09:45:00,4.1
-96,San Francisco,28,Non-Urgent Medical Question,1,0,0,0,0,0,0,0,1,1,2024-09-17 10:30:00,4.0
-97,Seattle,38,Cracked Window,1,0,0,0,0,0,0,0,1,1,2024-09-17 11:15:00,3.8
-98,Los Angeles,40,Repetitive Doorbell Ringing,1,0,0,0,0,0,0,0,1,1,2024-09-17 12:00:00,3.5
-99,New York,26,Non-Urgent Fire Alarm,1,0,0,1,0,0,0,0,0,1,2024-09-17 12:45:00,4.5
-100,Miami,33,Overgrown Lawn,1,0,0,0,0,0,0,1,0,1,2024-09-17 13:30:00,3.4
-101,Houston,30,Improperly Secured Trash,1,0,0,0,0,0,0,0,1,1,2024-09-17 14:15:00,2.9
-102,Denver,45,Minor Car Scratch,1,0,0,0,1,0,0,0,0,1,2024-09-17 15:00:00,4.3
-103,Boston,28,Unusual Odor in Kitchen,1,0,0,0,0,0,0,1,0,1,2024-09-17 15:45:00,3.7
-104,San Jose,34,Lost Personal Document,1,0,0,0,0,0,0,0,1,1,2024-09-17 16:30:00,3.1
-105,San Diego,40,Noisy Neighbors (No Threat),1,0,0,0,0,0,0,0,1,1,2024-09-17 17:15:00,2.8
-106,Charlotte,29,Minor Car Issue (No Breakdown),1,0,0,0,1,0,0,0,0,1,2024-09-17 18:00:00,3.6
-107,Philadelphia,38,Neighbor's Pet Disturbance,1,0,0,0,0,0,0,0,1,1,2024-09-17 18:45:00,2.9
-108,Dallas,27,Faulty Door Lock,1,0,0,0,0,0,0,1,0,1,2024-09-17 19:30:00,3.2
-109,Chicago,43,Erroneous Alarm Notification,1,0,0,0,0,0,0,0,1,1,2024-09-17 20:15:00,4.0
-110,Miami,35,Service Complaint,1,0,0,0,0,0,0,0,1,1,2024-09-17 21:00:00,2.7
-111,Atlanta,37,Minor Flooding (No Property Damage),1,0,0,0,0,0,0,1,0,1,2024-09-17 21:45:00,4.2
-112,San Francisco,32,Tripped Circuit Breaker,1,0,0,0,0,0,0,0,1,1,2024-09-17 22:30:00,4.1
-113,Los Angeles,29,Missing Package Delivery,1,0,0,0,0,0,0,0,1,1,2024-09-17 23:15:00,3.6
-114,New York,28,Intermittent Internet Service,1,0,0,0,0,0,0,0,1,1,2024-09-18 00:00:00,3.4
-115,San Diego,41,Unusual Bird Activity,1,0,0,0,0,0,0,1,0,1,2024-09-18 00:45:00,3.5
-116,Boston,30,Minor Animal Control Issue,1,0,0,0,0,0,0,1,0,1,2024-09-18 01:30:00,4.0
-117,San Antonio,35,Broken Key in Lock,1,0,0,0,0,0,0,0,1,1,2024-09-18 02:15:00,3.8
-118,Denver,27,False Carbon Monoxide Alarm,1,0,0,1,0,0,0,0,0,1,2024-09-18 03:00:00,4.4
-119,Philadelphia,33,Temporary Water Pressure Drop,1,0,0,0,0,0,0,0,1,1,2024-09-18 03:45:00,3.3
-120,Houston,30,Errant Shopping Cart in Parking Lot,1,0,0,0,0,0,0,0,1,1,2024-09-18 04:30:00,2.6
-121,San Jose,39,Non-Urgent Package Delivery Issue,1,0,0,0,0,0,0,0,1,1,2024-09-18 05:15:00,3.2
-122,San Francisco,31,Broken Garden Hose,1,0,0,0,0,0,0,0,1,1,2024-09-18 06:00:00,2.9
-123,Seattle,34,Small Trash Spill,1,0,0,0,0,0,0,0,1,1,2024-09-18 06:45:00,3.1
-124,Dallas,37,Non-Urgent Complaint About Store Service,1,0,0,0,0,0,0,0,1,1,2024-09-18 07:30:00,2.8
+location,age,emergency_details,num_people,mentioned_medical,mentioned_violence,mentioned_fire,mentioned_vehicular,mentioned_mental_health,mentioned_natural_disasters,mentioned_environmental_hazards,mentioned_suspicious_activity,mentioned_urgency,timestamp,severity
+Los Angeles,45,House Fire,3,0,0,1,0,0,0,0,0,1,2024-09-14 09:30:00,8.2
+Richmond,30,Drug Overdose,1,0,1,1,0,0,0,0,0,1,2024-09-14 08:00:00,9.5
+Miami,28,Car Accident,2,1,0,0,1,0,0,0,0,1,2024-09-14 10:15:00,7.9
+Chicago,62,Heart Attack,1,1,0,0,0,0,0,0,0,1,2024-09-14 11:45:00,9.8
+New York,35,Suspicious Package,1,0,0,0,0,0,0,1,1,1,2024-09-14 13:20:00,8.6
+San Francisco,22,Domestic Violence,2,0,1,0,0,1,0,0,0,1,2024-09-14 14:10:00,9.1
+Houston,55,Hurricane Evacuation,50,0,0,0,0,0,1,1,0,1,2024-09-14 15:00:00,9.9
+Seattle,40,Gunshot Wound,1,1,1,0,0,0,0,0,0,1,2024-09-14 16:25:00,9.7
+Dallas,33,Explosion,5,0,0,1,0,0,0,0,1,1,2024-09-14 17:35:00,9.4
+Boston,27,Suicide Threat,1,0,0,0,0,1,0,0,0,1,2024-09-14 18:50:00,8.3
+Philadelphia,41,Structural Collapse,3,0,0,1,0,0,1,0,0,1,2024-09-14 19:30:00,9.2
+Atlanta,50,Robbery in Progress,2,0,1,0,0,0,0,0,1,1,2024-09-14 20:10:00,8.5
+Phoenix,27,Severe Allergic Reaction,1,1,0,0,0,0,0,0,0,1,2024-09-14 21:00:00,8.9
+San Diego,38,Drug Overdose,2,1,0,0,0,0,0,0,0,1,2024-09-14 21:45:00,8.7
+San Jose,29,Fireworks Accident,4,0,0,1,0,0,0,0,1,1,2024-09-14 22:30:00,7.8
+Denver,33,Lost Child,1,0,0,0,0,0,0,1,0,1,2024-09-14 23:15:00,7.4
+Orlando,41,Heatstroke,2,1,0,0,0,0,0,0,0,1,2024-09-15 00:05:00,8.2
+Minneapolis,55,Building Fire,6,0,0,1,0,0,0,0,0,1,2024-09-15 00:50:00,9.0
+Detroit,44,Physical Assault,3,0,1,0,0,0,0,0,1,1,2024-09-15 01:30:00,8.8
+Las Vegas,34,Electrocution,1,1,0,0,0,0,0,0,0,1,2024-09-15 02:10:00,9.3
+Columbus,26,Animal Attack,2,1,0,0,0,0,0,0,0,1,2024-09-15 03:00:00,7.6
+Indianapolis,31,Severe Bleeding,1,1,0,0,0,0,0,0,0,1,2024-09-15 03:45:00,8.4
+Nashville,48,Missing Person,2,0,0,0,0,0,0,1,0,1,2024-09-15 04:30:00,7.7
+Kansas City,42,Explosion at Facility,4,0,0,1,0,0,0,0,1,1,2024-09-15 05:20:00,9.1
+Charlotte,30,Severe Chest Pain,1,1,0,0,0,0,0,0,0,1,2024-09-15 06:10:00,9.5
+St. Louis,29,Minor Vehicle Accident,2,0,0,0,1,0,0,0,0,1,2024-09-15 07:00:00,6.3
+Memphis,40,Minor Burns,1,1,0,0,0,0,0,0,0,1,2024-09-15 07:45:00,6.8
+Baltimore,32,Domestic Dispute,2,0,1,0,0,0,0,0,0,1,2024-09-15 08:30:00,6.5
+Albuquerque,45,Public Intoxication,1,0,0,0,0,0,0,0,0,1,2024-09-15 09:15:00,5.9
+Oakland,27,Animal in the Road,1,0,0,0,0,0,0,1,0,1,2024-09-15 10:00:00,6.0
+Colorado Springs,38,Overdose (Non-fatal),1,1,0,0,0,0,0,0,0,1,2024-09-15 10:50:00,7.2
+Virginia Beach,33,Lost Pet,1,0,0,0,0,0,0,1,0,1,2024-09-15 11:35:00,5.7
+Tampa,26,Unresponsive Person (Not Breathing),1,1,0,0,0,0,0,0,0,1,2024-09-15 12:20:00,7.8
+Honolulu,50,Slip and Fall Injury,1,1,0,0,0,0,0,0,0,1,2024-09-15 13:05:00,6.4
+Jacksonville,41,Noise Complaint,1,0,0,0,0,0,0,0,1,1,2024-09-15 13:50:00,5.3
+Indianapolis,28,Food Poisoning,2,1,0,0,0,0,0,0,0,1,2024-09-15 14:40:00,6.6
+Cleveland,34,Insect Sting,1,1,0,0,0,0,0,0,0,1,2024-09-15 15:25:00,6.2
+Milwaukee,37,Minor Cut,1,1,0,0,0,0,0,0,0,1,2024-09-15 16:10:00,6.1
+Arlington,43,Dislocated Shoulder,1,1,0,0,0,0,0,0,0,1,2024-09-15 17:00:00,7.0
+San Antonio,39,Stray Dog Concern,1,0,0,0,0,0,0,1,0,1,2024-09-15 17:45:00,5.8
+New Orleans,24,Request for Pizza Delivery,1,0,0,0,0,0,0,0,1,1,2024-09-15 18:00:00,1.0
+Washington,29,Complaint about Loud Music,1,0,0,0,0,0,0,0,1,1,2024-09-15 18:45:00,1.5
+Philadelphia,32,Lost Car Keys,1,0,0,0,0,0,0,0,1,1,2024-09-15 19:30:00,1.2
+San Diego,22,Request for Directions,1,0,0,0,0,0,0,0,1,1,2024-09-15 20:15:00,0.5
+Seattle,28,Inconvenient Parking Space,1,0,0,0,0,0,0,0,1,1,2024-09-15 21:00:00,1.4
+Austin,34,Neighbor's Dog Barking,1,0,0,0,0,0,0,0,1,1,2024-09-15 21:45:00,1.1
+Detroit,31,General Inquiry about Road Conditions,1,0,0,0,0,0,0,0,1,1,2024-09-15 22:30:00,1.6
+San Francisco,25,Request for Noise Complaint Follow-Up,1,0,0,0,0,0,0,0,1,1,2024-09-15 23:15:00,1.2
+Chicago,27,Dispute over Internet Service,1,0,0,0,0,0,0,0,1,1,2024-09-16 00:00:00,1.3
+Miami,30,Confusion about Garbage Collection Schedule,1,0,0,0,0,0,0,0,1,1,2024-09-16 00:45:00,1.4
+Orlando,40,Minor Household Leak,1,0,0,0,0,0,0,1,0,1,2024-09-16 01:30:00,2.0
+Boston,33,Cat Stuck in a Tree,1,0,0,0,0,0,0,1,0,1,2024-09-16 02:10:00,2.5
+Denver,29,Broken Window,1,0,0,0,0,0,0,0,1,1,2024-09-16 02:50:00,3.0
+Minneapolis,35,Clogged Toilet,1,0,0,0,0,0,0,0,1,1,2024-09-16 03:35:00,2.2
+Houston,38,Power Outage,1,0,0,0,0,0,0,1,0,1,2024-09-16 04:15:00,3.5
+Atlanta,41,Insect Infestation,1,0,0,0,0,0,0,0,1,1,2024-09-16 05:00:00,4.0
+Seattle,27,Traffic Jam (No Accident),1,0,0,0,0,0,0,0,1,1,2024-09-16 05:45:00,2.8
+San Jose,32,Unresponsive Vending Machine,1,0,0,0,0,0,0,0,1,1,2024-09-16 06:20:00,2.3
+San Antonio,45,Fridge Not Cooling,1,0,0,0,0,0,0,0,1,1,2024-09-16 07:10:00,3.2
+Las Vegas,30,Lost Wallet,1,0,0,0,0,0,0,0,1,1,2024-09-16 08:00:00,3.0
+Indianapolis,24,Incorrect Billing Issue,1,0,0,0,0,0,0,0,1,1,2024-09-16 08:45:00,2.7
+St. Louis,37,Unpleasant Smell in Apartment,1,0,0,0,0,0,0,1,0,1,2024-09-16 09:30:00,3.1
+Philadelphia,28,Noisy Neighbor (No Threat),1,0,0,0,0,0,0,0,1,1,2024-09-16 10:15:00,2.9
+Charlotte,34,Low-Level Emergency Alert (False),1,0,0,0,0,0,0,0,1,1,2024-09-16 11:00:00,4.5
+Nashville,41,Defective Smoke Detector,1,0,0,1,0,0,0,0,0,1,2024-09-16 11:45:00,4.0
+Jacksonville,29,Loose Floorboard (No Injury),1,0,0,0,0,0,0,0,1,1,2024-09-16 12:30:00,3.3
+Cleveland,36,Clogged Sink,1,0,0,0,0,0,0,0,1,1,2024-09-16 13:15:00,2.6
+Miami,31,Minor Car Damage (No Accident),1,0,0,0,1,0,0,0,0,1,2024-09-16 14:00:00,4.2
+San Diego,43,Request for Assistance with Personal Issue,1,0,0,0,0,0,0,0,1,1,2024-09-16 14:45:00,2.4
+San Francisco,39,Small Fire (Extinguished by Homeowner),1,0,0,1,0,0,0,0,0,1,2024-09-16 15:30:00,4.0
+San Jose,25,Phone Battery Dead,1,0,0,0,0,0,0,0,1,1,2024-09-17 02:15:00,1.5
+St. Louis,31,Refrigerator Making Noise,1,0,0,0,0,0,0,0,1,1,2024-09-17 03:00:00,2.0
+Minneapolis,29,Minor Yard Flooding,1,0,0,0,0,0,0,1,0,1,2024-09-17 03:45:00,2.8
+Memphis,37,Vehicle Door Stuck,1,0,0,0,1,0,0,0,0,1,2024-09-17 04:30:00,3.1
+Indianapolis,42,Leaking Faucet,1,0,0,0,0,0,0,0,1,1,2024-09-17 05:15:00,2.5
+San Diego,30,Lost Item in Public Area,1,0,0,0,0,0,0,0,1,1,2024-09-17 06:00:00,3.0
+San Antonio,39,Minor Graffiti,1,0,0,0,0,0,0,1,0,1,2024-09-17 06:45:00,4.0
+Philadelphia,34,Noisy Plumbing,1,0,0,0,0,0,0,0,1,1,2024-09-17 07:30:00,2.7
+Chicago,41,Broken Mailbox,1,0,0,0,0,0,0,0,1,1,2024-09-17 08:15:00,3.3
+Dallas,27,Small Animal in Yard,1,0,0,0,0,0,0,1,0,1,2024-09-17 09:00:00,3.2
+Atlanta,36,Temporary Power Flicker,1,0,0,0,0,0,0,0,1,1,2024-09-17 09:45:00,4.1
+San Francisco,28,Non-Urgent Medical Question,1,0,0,0,0,0,0,0,1,1,2024-09-17 10:30:00,4.0
+Seattle,38,Cracked Window,1,0,0,0,0,0,0,0,1,1,2024-09-17 11:15:00,3.8
+Los Angeles,40,Repetitive Doorbell Ringing,1,0,0,0,0,0,0,0,1,1,2024-09-17 12:00:00,3.5
+New York,26,Non-Urgent Fire Alarm,1,0,0,1,0,0,0,0,0,1,2024-09-17 12:45:00,4.5
+Miami,33,Overgrown Lawn,1,0,0,0,0,0,0,1,0,1,2024-09-17 13:30:00,3.4
+Houston,30,Improperly Secured Trash,1,0,0,0,0,0,0,0,1,1,2024-09-17 14:15:00,2.9
+Denver,45,Minor Car Scratch,1,0,0,0,1,0,0,0,0,1,2024-09-17 15:00:00,4.3
+Boston,28,Unusual Odor in Kitchen,1,0,0,0,0,0,0,1,0,1,2024-09-17 15:45:00,3.7
+San Jose,34,Lost Personal Document,1,0,0,0,0,0,0,0,1,1,2024-09-17 16:30:00,3.1
+San Diego,40,Noisy Neighbors (No Threat),1,0,0,0,0,0,0,0,1,1,2024-09-17 17:15:00,2.8
+Charlotte,29,Minor Car Issue (No Breakdown),1,0,0,0,1,0,0,0,0,1,2024-09-17 18:00:00,3.6
+Philadelphia,38,Neighbor's Pet Disturbance,1,0,0,0,0,0,0,0,1,1,2024-09-17 18:45:00,2.9
+Dallas,27,Faulty Door Lock,1,0,0,0,0,0,0,1,0,1,2024-09-17 19:30:00,3.2
+Chicago,43,Erroneous Alarm Notification,1,0,0,0,0,0,0,0,1,1,2024-09-17 20:15:00,4.0
+Miami,35,Service Complaint,1,0,0,0,0,0,0,0,1,1,2024-09-17 21:00:00,2.7
+Atlanta,37,Minor Flooding (No Property Damage),1,0,0,0,0,0,0,1,0,1,2024-09-17 21:45:00,4.2
+San Francisco,32,Tripped Circuit Breaker,1,0,0,0,0,0,0,0,1,1,2024-09-17 22:30:00,4.1
+Los Angeles,29,Missing Package Delivery,1,0,0,0,0,0,0,0,1,1,2024-09-17 23:15:00,3.6
+New York,28,Intermittent Internet Service,1,0,0,0,0,0,0,0,1,1,2024-09-18 00:00:00,3.4
+San Diego,41,Unusual Bird Activity,1,0,0,0,0,0,0,1,0,1,2024-09-18 00:45:00,3.5
+Boston,30,Minor Animal Control Issue,1,0,0,0,0,0,0,1,0,1,2024-09-18 01:30:00,4.0
+San Antonio,35,Broken Key in Lock,1,0,0,0,0,0,0,0,1,1,2024-09-18 02:15:00,3.8
+Denver,27,False Carbon Monoxide Alarm,1,0,0,1,0,0,0,0,0,1,2024-09-18 03:00:00,4.4
+Philadelphia,33,Temporary Water Pressure Drop,1,0,0,0,0,0,0,0,1,1,2024-09-18 03:45:00,3.3
+Houston,30,Errant Shopping Cart in Parking Lot,1,0,0,0,0,0,0,0,1,1,2024-09-18 04:30:00,2.6
+San Jose,39,Non-Urgent Package Delivery Issue,1,0,0,0,0,0,0,0,1,1,2024-09-18 05:15:00,3.2
+San Francisco,31,Broken Garden Hose,1,0,0,0,0,0,0,0,1,1,2024-09-18 06:00:00,2.9
+Seattle,34,Small Trash Spill,1,0,0,0,0,0,0,0,1,1,2024-09-18 06:45:00,3.1
+Dallas,37,Non-Urgent Complaint About Store Service,1,0,0,0,0,0,0,0,1,1,2024-09-18 07:30:00,2.8

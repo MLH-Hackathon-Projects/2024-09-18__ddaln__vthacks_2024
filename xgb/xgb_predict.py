@@ -29,17 +29,17 @@ if __name__ == '__main__':
     # Example usage
     CURR_MODEL_PATH = 'xgb/xgb_models/xgboost_model.json'
     data = {
-        'Age': [50],
-        'num_people': [3],
-        'medical': [0],
-        'violence': [0],
-        'fire': [1],
-        'vehicular': [0],
-        'mental_health': [0],
-        'natural_disasters': [0],
-        'environmental_hazards': [0],
-        'suspicious_activity': [0],
-        'urgency': [1],
+        'age': [30],
+        'num_people': [1],
+        'mentioned_medical': [0],
+        'mentioned_violence': [1],
+        'mentioned_fire': [1],
+        'mentioned_vehicular': [0],
+        'mentioned_mental_health': [0],
+        'mentioned_natural_disasters': [0],
+        'mentioned_environmental_hazards': [0],
+        'mentioned_suspicious_activity': [0],
+        'mentioned_urgency': [1],
     }
     severity_score = predict_severity(CURR_MODEL_PATH, data)
     print(f"Prediction: {severity_score}")
