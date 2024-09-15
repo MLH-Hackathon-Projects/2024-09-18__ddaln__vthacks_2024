@@ -92,11 +92,14 @@ class DatabaseManager:
 
             new_incident = self.serialize(incident)
 
-            incident_list.append((incident['severity'], new_incident))
+            severity: float = incident['severity']
+            dt: datetime = incident['timestamp']
+
+            incident_list.append((severity, dt, new_incident))
 
         incident_list.sort()
 
-        result = [incident for _, incident in incident_list]
+        result = [incident for _,_, incident in incident_list]
 
         return result
     
@@ -133,7 +136,10 @@ class DatabaseManager:
             
 
 db = DatabaseManager()
-db.fetch_random_user()
+incidents = db.get_ordered_by_severity()
+
+for incident in incidents:
+    print(incident)
 
 
     
