@@ -78,30 +78,31 @@ class DatabaseManager:
         incidents = self.collection.find()
         
         # Define severity order and scores
-        severity_info = {
-            'critical': {'order': 0, 'score': 100, 'highlight': True},
-            'high': {'order': 1, 'score': 75, 'highlight': True},
-            'medium': {'order': 2, 'score': 50, 'highlight': False},
-            'low': {'order': 3, 'score': 25, 'highlight': False}
-        }
+        # severity_info = {
+        #     'critical': {'order': 0, 'score': 100, 'highlight': True},
+        #     'high': {'order': 1, 'score': 75, 'highlight': True},
+        #     'medium': {'order': 2, 'score': 50, 'highlight': False},
+        #     'low': {'order': 3, 'score': 25, 'highlight': False}
+        # }
         
         incident_list = []
         for incident in incidents:
             new_incident = self.serialize(incident)
-            severity = incident['severity'].lower()
-            info = severity_info.get(severity, {'order': 4, 'score': 0, 'highlight': False})
+            severity = incident['severity']
+            dt: datetime = incident['timestamp']
+            # info = severity_info.get(severity, {'order': 4, 'score': 0, 'highlight': False})
             
             # Add score and highlight information to the incident
-            new_incident['severity_score'] = info['score']
-            new_incident['highlight'] = info['highlight']
+            # new_incident['severity_score'] = info['score']
+            # new_incident['highlight'] = info['highlight']
             
-            incident_list.append((info['order'], new_incident))
+            incident_list.append((severity,dt, new_incident))
         
         # Sort by severity order (ascending) and then by timestamp (descending) if severities are equal
-        incident_list.sort(key=lambda x: (x[0], -x[1]['timestamp'].timestamp()))
+        incident_list.sort(key=lambda x: (-x[0], x[1]))
         
         # Extract just the incident data, discarding the order value used for sorting
-        result = [incident for _, incident in incident_list]
+        result = [incident for _,_, incident in incident_list]
         
         return result
     
