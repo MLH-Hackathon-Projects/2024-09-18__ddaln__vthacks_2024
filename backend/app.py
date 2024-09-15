@@ -32,7 +32,7 @@ def add_incident():
 @app.route('/incidents/flagged', methods=['GET'])
 def get_flagged_incidents():
     try:
-        flagged_incidents = db_manager.get_incidents_by_feature("flagged")
+        flagged_incidents = db_manager.get_incidents_by_feature("needs_review")
         return jsonify(flagged_incidents)
     except Exception as e:
         return jsonify({"error": str(e)}), 500

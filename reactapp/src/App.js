@@ -59,10 +59,6 @@ function App() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       let data = await response.json();
-      // Only reverse the data for severity sorting
-      if (sortType === 'severity') {
-        data = data.reverse();
-      }
       setIncidents(data);
     } catch (error) {
       console.error('Error fetching incidents:', error);
@@ -115,7 +111,7 @@ function App() {
         <h1>DispatchIQ</h1>
       </header>
 
-      {isLoading && <div className="loading-indicator">Updating data...</div>}
+
       {error && <div className="error-message">{error}</div>}
 
       <div className="content">
