@@ -106,6 +106,17 @@ class DatabaseManager:
         
         return result
     
+    def resolve_incident(self, incident_id: str):
+        self.collection.update_one(
+            {"_id": ObjectId(incident_id)},
+            {
+                "$set": {
+                    "flagged": 1,
+                    "needs_review": 0
+                }
+            }
+        )
+
     def is_empty(self) -> bool:
         return self.collection.count_documents({}) == 0    
 
@@ -136,13 +147,23 @@ class DatabaseManager:
         result = [incident for _, incident in incident_list]
 
         return result
+    
+    # def update_collection(self):
+    #     result = self.collection.update_many(
+    #             {},  # This empty filter matches all documents
+    #             {"$set": {"flagged": 0}},  # Set 'flagged' to 0 for all documents
+    #             upsert=False  # Don't create new documents if they don't exist
+    #         )
+
+        
             
 
-db = DatabaseManager()
-incidents = db.get_ordered_by_severity()
+# db = DatabaseManager()
+# db.update_collection()
 
-for incident in incidents:
-    print(incident)
+#db.clear_database()
+
+
 
 
     

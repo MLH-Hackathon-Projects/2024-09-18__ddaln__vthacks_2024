@@ -15,8 +15,8 @@ def analyze_emergency_call(transcription):
 
     Please fill out the information in the dictionary and output
         {{
-        'location': '',
-        'name': '',
+        'location': "",
+        'name': "",
         'age': 0,
         'emergency_details': "",
         'num_people': 1,
@@ -51,11 +51,13 @@ def convert_response_to_dict(transcription):
     dictionary = ast.literal_eval(analysis)
     dictionary["timestamp"] = datetime.now()
     dictionary["transcript"] =  transcription
+    dictionary['flagged'] = 0
 
     if dictionary['location'] == '' or dictionary['name'] == '':
-        dictionary['needs_review'] = True
+        dictionary['needs_review'] = 1
     else:
-        dictionary['needs_review'] =  False
+        dictionary['needs_review'] =  0
+        
     print(dictionary)
     return dictionary
 
@@ -81,8 +83,8 @@ def recognize_from_microphone():
         print(f"Speech recognition failed: {speech_recognition_result.reason}")
         return None
 
-if __name__ == "__main__":
-    stuff = 'I am John, help. My car exploded and is on fire!'
-    #recognize_from_microphone()
-    abc = convert_response_to_dict(stuff)
-    print(abc)
+# if __name__ == "__main__":
+#     stuff = 'I am John, help. My car exploded and is on fire!'
+#     #recognize_from_microphone()
+#     abc = convert_response_to_dict(stuff)
+#     print(abc)
