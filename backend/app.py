@@ -1,21 +1,49 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 from DatabaseManager import DatabaseManager
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # Initialize DatabaseManager
 db_manager = DatabaseManager()
 
-@app.route('/random-user', methods=['GET'])
-def get_random_user():
+@app.route('/incidents', methods=['GET'])
+def get_incidents():
     try:
-        # Fetch a random user
-        user = db_manager.fetch_random_user()
-        if user:
-            return jsonify(user)
+        sort_by = request.args.get('sort', 'severity')  # Default sort by severity
+        if sort_by == 'severity':
+            incidents = db_manager.get_ordered_by_severity()
         else:
-            return jsonify({"message": "No user found"}), 404
+            incidents = db_manager.get_ordered_by_time()
+        return jsonify(incidents)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# Other routes...
+@app.route('/incidents', methods=['POST'])
+def add_incident():
+    try:
+        incident_data = request.json
+        db_manager.insert_incident(incident_data)
+        return jsonify({"message": "Incident added successfully"}), 201
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/incidents/flagged', methods=['GET'])
+def get_flagged_incidents():
+    try:
+        flagged_incidents = db_manager.get_incidents_by_feature("needs_review")
+        return jsonify(flagged_incidents)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/incidents/resolved', methods=['GET'])
+def get_resolved_incidents():
+    try:
+        resolved_incidents = db_manager.get_incidents_by_feature("resolved")
+        return jsonify(resolved_incidents)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)

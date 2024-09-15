@@ -39,5 +39,5 @@ speech_to_text_dict["severity"] = severity_score
 dbm = DatabaseManager()
 new_incident = dbm.insert_incident(speech_to_text_dict)
 
-print(new_incident)
+# print(new_incident)
 

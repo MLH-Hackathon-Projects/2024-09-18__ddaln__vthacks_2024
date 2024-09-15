@@ -51,6 +51,11 @@ def convert_response_to_dict(transcription):
     dictionary = ast.literal_eval(analysis)
     dictionary["timestamp"] = datetime.now()
     dictionary["transcript"] =  transcription
+
+    if dictionary['location'] == '' or dictionary['name'] == '':
+        dictionary['needs_review'] = True
+    else:
+        dictionary['needs_review'] =  False
     print(dictionary)
     return dictionary
 
