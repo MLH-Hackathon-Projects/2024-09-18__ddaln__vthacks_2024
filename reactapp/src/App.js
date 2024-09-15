@@ -59,10 +59,10 @@ function App() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       let data = await response.json();
-      // Only reverse the data for severity sorting
-      if (sortType === 'severity') {
-        data = data.reverse();
-      }
+      // // Only reverse the data for severity sorting
+      // if (sortType === 'severity') {
+      //   data = data.reverse();
+      // }
       setIncidents(data);
     } catch (error) {
       console.error('Error fetching incidents:', error);
